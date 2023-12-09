@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './App.css'
+
 import {
   Card,
   CardHeader,
@@ -9,7 +8,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-function App() {
+export default function Home() {
 
   return (
     <Card className="mt-6 w-96">
@@ -36,4 +35,3 @@ function App() {
   )
 }
 
-export default App

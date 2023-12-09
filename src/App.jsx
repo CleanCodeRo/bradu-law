@@ -1,34 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Card className="mt-6 w-96">
+      <CardHeader color="blue-gray" className="relative h-56">
+        <img
+          src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+          alt="card-image"
+        />
+      </CardHeader>
+      <CardBody>
+        <Typography variant="h5" color="blue-gray" className="mb-2">
+          UI/UX Review Check
+        </Typography>
+        <Typography>
+          The place is close to Barceloneta Beach and bus stop just 2 min by
+          walk and near to &quot;Naviglio&quot; where you can enjoy the main
+          night life in Barcelona.
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Button>Read More</Button>
+      </CardFooter>
+    </Card>
   )
 }
 

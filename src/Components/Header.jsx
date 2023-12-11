@@ -2,67 +2,79 @@ export default function Header() {
   return (
     <div
       id="Header"
-      className="w-full h-fit  bg-white flex items-center flex-col justify-center absolute "
+      className="w-full h-fit  bg-white flex items-center flex-col justify-center  "
     >
+      <div id="nameAndPhoneNumber" className="flex justify-between bg-first h-10 w-full font-normal font-['Inter'] ">
+        <div id="lawyerName" className="flex items-center h-full ml-14">
+          <img className="h-6 w-6 mx-1" src="public\book-with-marker_43139.png" />
+          <p>CABINET AVOCAT SI INSOLVENTA URSARESCU</p>
+        </div>
+
+        <div id="lawyerContact" className="flex h-full items-center mr-14">
+          <i className="fa-solid fa-phone mx-1"></i>
+          <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
+        </div>
+      </div>
+
       <div id="row1Header" class="w-[1140px] flex items-center justify-start">
         <img
           id="logo"
-          class="w-[260px] h-20"
+          className="w-[260px] h-20"
           src="https://via.placeholder.com/260x86"
         />
-        <div id="buttonsContainer" class="flex-grow flex justify-end">
+        <div id="buttonsContainer" class="flex-grow flex justify-end text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-              <div class="text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-                Despre noi
-              </div>
+
+              Despre noi
+
             </div>
           </div>
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-              <div class="text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-                Servicii
-              </div>
+
+              Servicii
+
             </div>
           </div>
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-              <div class="text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-                Insolventa/Faliment
-              </div>
+
+              Insolventa/Faliment
+
             </div>
           </div>
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-              <div class="text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-                Licitatii
-              </div>
+
+              Licitatii
+
             </div>
           </div>
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-              <div class="text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-                Articole
-              </div>
+
+              Articole
+
             </div>
           </div>
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-r border-zinc-100 flex items-center">
-              <div class="text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-                Contact
-              </div>
+            
+              Contact
+             
             </div>
           </div>
         </div>
       </div>
 
       <div id="row2Header" className="w-[1140px] flex flex-row justify-start">
-        <div className="w-[260px] h-[41px] text-s p-3 bg-[#F2F2F2]">
+        <div className="w-[260px] h-[41px] text-s p-3 bg-first">
           Domenii de practica
         </div>
         <input
           id="searchBar"
-          className="w-[880px] border-2 border-[#F2F2F2]"
+          className="w-[880px] border-2 border-first p-1"
           placeholder="Search a keyword..."
         ></input>
       </div>

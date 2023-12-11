@@ -2,9 +2,9 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="w-full h-[138.31px]  pb-[30px] bg-zinc-100 justify-center items-center inline-flex absolute bottom-0 bg-[#F1F1F1]"
+      className="w-full h-[138.31px]  pb-[30px] bg-zinc-100 justify-center items-center inline-flex bg-first"
     >
-      <div className="w-[1140px] h-[108.31px] relative  border-zinc-300 flex-col justify-start items-center flex">
+      <div className="w-[1140px] h-[108.31px]   border-zinc-300 flex-col justify-start items-center flex">
         <div
           id="contactLoc"
           className="w-full mt-3 mb-5 border-b border-zinc-300 justify-center items-center inline-flex"

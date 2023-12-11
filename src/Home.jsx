@@ -8,11 +8,15 @@ import {
   Button,
 } from "@material-tailwind/react";
 import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
 export default function Home() {
 
   return (
-    <Footer/>
+    <>
+      <Header />
+      <Footer />
+    </>
   );
 }
 

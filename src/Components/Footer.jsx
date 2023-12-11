@@ -4,11 +4,11 @@ export default function Footer() {
       id="footer"
       className="w-full h-[138.31px]  pb-[30px] bg-zinc-100 justify-center items-center inline-flex absolute bottom-0 bg-[#F1F1F1]"
     >
-      <div className="w-full h-[108.31px] relative  border-zinc-300 flex-col justify-start items-center flex">
+      <div className="w-[1140px] h-[108.31px] relative  border-zinc-300 flex-col justify-start items-center flex">
         <div
           id="contactLoc"
           className="w-full mt-3 mb-5 border-b border-zinc-300 justify-center items-center inline-flex"
-        >
+              >
           <div className="w-fit h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px]">
             Tel: +40 745 295 351 / Strada Aviator Maior Ștefan Sănătescu 44,
             Etaj 1, Sector 1, București 011478

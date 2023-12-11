@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div
       id="Header"
-      className="w-full h-32  bg-white flex items-center flex-col justify-center"
+      className="w-full h-fit  bg-white flex items-center flex-col justify-center absolute "
     >
       <div id="row1Header" class="w-[1140px] flex items-center justify-start">
         <img

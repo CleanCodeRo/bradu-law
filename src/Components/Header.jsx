@@ -4,19 +4,22 @@ export default function Header() {
       id="Header"
       className="w-full h-fit  bg-white flex items-center flex-col justify-center  "
     >
-      <div id="nameAndPhoneNumber" className="flex justify-between bg-first h-10 w-full font-normal font-['Inter'] ">
-        <div id="lawyerName" className="flex items-center h-full ml-14">
-          <img className="h-6 w-6 mx-1" src="public\book-with-marker_43139.png" />
-          <p>CABINET AVOCAT SI INSOLVENTA URSARESCU</p>
-        </div>
 
-        <div id="lawyerContact" className="flex h-full items-center mr-14">
-          <i className="fa-solid fa-phone mx-1"></i>
-          <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
+      <div className="w-full flex justify-center bg-first h-14 ">
+        <div id="nameAndPhoneNumber" className="flex justify-between w-3/5 font-normal font-['Inter'] ">
+          <div id="lawyerName" className="flex items-center h-full">
+            <img className="h-6 w-6 mx-1" src="public\book-with-marker_43139.png" />
+            <p>CABINET AVOCAT SI INSOLVENTA URSARESCU</p>
+          </div>
+
+          <div id="lawyerContact" className="flex h-full items-center">
+            <i className="fa-solid fa-phone mx-1"></i>
+            <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
+          </div>
         </div>
       </div>
 
-      <div id="row1Header" class="w-[1140px] flex items-center justify-start">
+      <div id="row1Header" class="w-3/5 flex items-center justify-start">
         <img
           id="logo"
           className="w-[260px] h-20"
@@ -60,15 +63,15 @@ export default function Header() {
           </div>
           <div class="flex-auto">
             <div class="h-20 pl-5 pr-4 border-l border-r border-zinc-100 flex items-center">
-            
+
               Contact
-             
+
             </div>
           </div>
         </div>
       </div>
 
-      <div id="row2Header" className="w-[1140px] flex flex-row justify-start">
+      <div id="row2Header" className="w-3/5 flex flex-row justify-start">
         <div className="w-[260px] h-[41px] text-s p-3 bg-first">
           Domenii de practica
         </div>

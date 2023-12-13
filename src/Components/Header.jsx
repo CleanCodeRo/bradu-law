@@ -1,3 +1,5 @@
+import Dropdown from "../Reusables/Dropdown";
+
 export default function Header() {
   return (
     <div
@@ -19,50 +21,50 @@ export default function Header() {
         </div>
       </div>
 
-      <div id="row1Header" class="w-3/5 flex items-center justify-start">
+      <div id="row1Header" className="w-3/5 flex items-center justify-start">
         <img
           id="logo"
           className="w-[260px] h-20"
           src="https://via.placeholder.com/260x86"
         />
-        <div id="buttonsContainer" class="flex-grow flex justify-end text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-          <div class="flex-auto">
-            <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+        <div id="buttonsContainer" className="flex-grow flex justify-end text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
+          <div className="flex-auto">
+            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
 
               Despre noi
 
             </div>
           </div>
-          <div class="flex-auto">
-            <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+          <div className="flex-auto">
+            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
 
               Servicii
 
             </div>
           </div>
-          <div class="flex-auto">
-            <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+          <div className="flex-auto">
+            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
 
               Insolventa/Faliment
 
             </div>
           </div>
-          <div class="flex-auto">
-            <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+          <div className="flex-auto">
+            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
 
               Licitatii
 
             </div>
           </div>
-          <div class="flex-auto">
-            <div class="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+          <div className="flex-auto">
+            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
 
               Articole
 
             </div>
           </div>
-          <div class="flex-auto">
-            <div class="h-20 pl-5 pr-4 border-l border-r border-zinc-100 flex items-center">
+          <div className="flex-auto">
+            <div className="h-20 pl-5 pr-4 border-l border-r border-zinc-100 flex items-center">
 
               Contact
 
@@ -72,9 +74,7 @@ export default function Header() {
       </div>
 
       <div id="row2Header" className="w-3/5 flex flex-row justify-start">
-        <div className="w-[260px] h-[41px] text-s p-3 bg-first">
-          Domenii de practica
-        </div>
+        <Dropdown/>
         <input
           id="searchBar"
           className="w-[880px] border-2 border-first p-1"

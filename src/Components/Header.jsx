@@ -10,7 +10,7 @@ export default function Header() {
       <div className="w-full flex justify-center bg-first h-14 ">
         <div id="nameAndPhoneNumber" className="flex justify-between w-3/5 font-normal font-['Inter'] ">
           <div id="lawyerName" className="flex items-center h-full">
-            <img className="h-6 w-6 mx-1" src="public\book-with-marker_43139.png" />
+            <img className="h-6 w-6 mx-1" src="images/book-with-marker_43139.png" />
             <p>CABINET AVOCAT SI INSOLVENTA URSARESCU</p>
           </div>
 

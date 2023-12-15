@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Dropdown from "../Reusables/Dropdown";
 
+
 export default function Header() {
+
+  const navigate = useNavigate()
+
   return (
     <div
       id="Header"
@@ -11,7 +16,7 @@ export default function Header() {
         <div id="nameAndPhoneNumber" className="flex justify-between w-3/5 font-normal font-['Inter'] ">
           <div id="lawyerName" className="flex items-center h-full">
             <img className="h-6 w-6 mx-1" src="images/book-with-marker_43139.png" />
-            <p>CABINET AVOCAT SI INSOLVENTA URSARESCU</p>
+            <p className="uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
           </div>
 
           <div id="lawyerContact" className="flex h-full items-center">
@@ -26,14 +31,15 @@ export default function Header() {
           id="logo"
           className="w-[260px] h-20"
           src="https://via.placeholder.com/260x86"
+          onClick={() => navigate("/")}
         />
-        <div id="buttonsContainer" className="flex-grow flex justify-end text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight">
-          <div className="flex-auto">
-            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+        <div id="buttonsContainer" className="flex-grow flex justify-end text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer">
+          <div className="flex-auto ">
+            <a href="/aboutUs" className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
 
               Despre noi
 
-            </div>
+            </a>
           </div>
           <div className="flex-auto">
             <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">

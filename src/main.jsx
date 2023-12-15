@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './Home';
 import './index.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import Home from './Pages/Home';
+import AboutUs from './Pages/AboutUs';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}> </Route>
+        <Route path="/aboutUs" element={<AboutUs/>}> </Route>
       </Routes>
     <Footer/>
     </BrowserRouter>

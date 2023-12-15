@@ -62,8 +62,12 @@ export default function Footer() {
           </div>
         </div>
         <div id="copyright" className="w-fit h-3.5">
-          <span className="w-fit text-neutral-500 text-s font-normal font-['Inter'] leading-tight ">
+          {/* <span className="w-fit text-neutral-500 text-s font-normal font-['Inter'] leading-tight ">
             Copyright 2021 Ursarescu.ro - Cabinet Avocat si Insolventa Bucuresti
+            - Powered by{" "}
+          </span> */}
+          <span className="w-fit text-neutral-500 text-s font-normal font-['Inter'] leading-tight ">
+            Copyright 2021 bradu.ro - CABINET DE AVOCAT-CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA
             - Powered by{" "}
           </span>
           <span className="text-neutral-500 text-s font-normal font-['Inter'] leading-tight">

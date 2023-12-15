@@ -1,6 +1,5 @@
-
-import CabinetDetails from "./Components/HomeComponents/CabinetDetails";
-import CarrouselPhotos from "./Components/HomeComponents/CarrouselPhotos";
+import CabinetDetails from "../Components/HomeComponents/CabinetDetails";
+import CarrouselPhotos from "../Components/HomeComponents/CarrouselPhotos"
 
 export default function Home() {
 

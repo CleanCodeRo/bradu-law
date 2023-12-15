@@ -12,18 +12,20 @@ export default function Header() {
       className="w-full h-fit  bg-white flex items-center flex-col justify-center  "
     >
 
-      <div className="w-full flex justify-center bg-first h-14 ">
-        <div id="nameAndPhoneNumber" className="flex justify-between w-3/5 font-normal font-['Inter'] ">
-          <div id="lawyerName" className="flex items-center h-full">
+      <div className="w-full flex justify-center bg-first text-sm sm:text-base">
+
+        <div id="nameAndPhoneNumber" className="flex items-center sm:justify-between  flex-col xl:flex-row  w-full font-normal font-['Inter'] py-5 ">
+          <div id="lawyerName" className="flex items-center h-full ml-0 sm:ml-10 ">
             <img className="h-6 w-6 mx-1" src="images/book-with-marker_43139.png" />
             <p className="uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
           </div>
 
-          <div id="lawyerContact" className="flex h-full items-center">
+          <div id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 ">
             <i className="fa-solid fa-phone mx-1"></i>
             <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
           </div>
         </div>
+
       </div>
 
       <div id="row1Header" className="w-3/5 flex items-center justify-start">

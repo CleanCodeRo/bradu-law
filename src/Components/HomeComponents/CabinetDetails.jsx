@@ -6,19 +6,19 @@ export default function CabinetDetails() {
 
     return (
         <div className="w-full flex justify-center font-normal font-['Inter']">
-            <div className="w-3/5 my-20  text-gray-700">
+            <div className="w-11/12 md:w-5/6 xl:w-3/5  my-20  text-gray-700">
                 <div id="firtPart" className="">
-                    <p className="font-bold text-center text-2xl uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
+                    <p className="font-bold text-center text-xl sm:text-2xl uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
                     <p className="text-center mt-4">acordă asistență și reprezentare juridică în domenii de drept comercial, înființări societăți, drept civil, dreptul familiei, dreptul muncii, proprietate intelectuală, procedura insolvenței, recuperări creanțe,
                         drept administrativ, asociații și fundații etc.
                     </p>
-                    <p className="mt-4"><span className="font-bold">Cabinetul de Insolvență </span> oferă servicii în etapa de pre-insolvență, insolvență, reorganizare judiciară, faliment, lichidare voluntară la Registrul Comerțului.</p>
+                    <p className="mt-4 text-center"><span className="font-bold">Cabinetul de Insolvență </span> oferă servicii în etapa de pre-insolvență, insolvență, reorganizare judiciară, faliment, lichidare voluntară la Registrul Comerțului.</p>
                 </div>
 
                 <div id="secondPart" className="">
                     <p className="font-bold text-lg text-center mt-10 uppercase">Domenii de practica – Cabinet de Avocat Bucuresti</p>
                     <hr className="my-5"></hr>
-                    <div id="iconsGrid" className="w-full grid grid-cols-2 gap-x-16">
+                    <div id="iconsGrid" className="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-16">
                         <IconDetailCard image="images/parental-control_3092920.png" title={"Dreptul Familiei – Cabinet de avocat"} text={"Referitor la acțiunile întemeiate pe relațiile de familie, asigurăm asistarea și reprezentarea în cadrul procedurilor de Divorț (divorț notar, divorț instanță) indiferent dacă sunt divorțuri întemeiate pe culpa comună a soților cât și culpa exclusivă a unuia dintre soți …"} />
                         <IconDetailCard image="images/judge_1705255.png" title={"Drept Civil – Cabinet de avocat"} text={"Recuperări creanțe– în domeniul recuperărilor de creanțe oferim asistență atât în etapa pre litigioasă – recuperare creanțe pe cale amiabilă prin redactarea și transmiterea  somației de plată întemeiată pe dispozițiile articolului 1015 din Codul de Procedură Civilă…"} />
                         <IconDetailCard image="images/construction_8434403.png" title={"Drept Societar – Cabinet de avocat"} text={"Consultanta, asistare și reprezentare în orice fel de operațiuni în fața Oficiului Registrului Comertului: – înfiintare societate, extindere / modificare obiect de activitate, majorare capital social,  redactare acte constitutive și acte adiționale …"} />

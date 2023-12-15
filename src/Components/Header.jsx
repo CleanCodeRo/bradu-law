@@ -1,10 +1,23 @@
 import { useNavigate } from "react-router-dom";
 import Dropdown from "../Reusables/Dropdown";
+import { LeftDrawer } from "./LeftDrawer";
+
 
 
 export default function Header() {
 
   const navigate = useNavigate()
+
+
+  const HeaderButton = ({ text, navigate }) => {
+    return (
+
+      <a href={navigate} className="  pl-5 pr-4 py-4 border-l border-zinc-100 flex items-center">
+        {text}
+      </a>
+
+    )
+  }
 
   return (
     <div
@@ -20,75 +33,66 @@ export default function Header() {
             <p className="uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
           </div>
 
-          <div id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 ">
+          <div id="lawyerContact" className="hidden px1080:flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 ">
             <i className="fa-solid fa-phone mx-1"></i>
             <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
           </div>
         </div>
-
       </div>
 
-      <div id="row1Header" className="w-3/5 flex items-center justify-start">
+
+      {/* //THIS IS A SMALL HEADER */}
+      <div id="SMALL HEADER" className=" w-full bg-first flex px1080:hidden items-center justify-between py-3">
+        <div className="flex items-center">
+        <LeftDrawer specialClass="mx-3" />
         <img
           id="logo"
-          className="w-[260px] h-20"
+          className="w-[260px] h-20 rounded-lg"
           src="https://via.placeholder.com/260x86"
           onClick={() => navigate("/")}
         />
-        <div id="buttonsContainer" className="flex-grow flex justify-end text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer">
-          <div className="flex-auto ">
-            <a href="/aboutUs" className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+        </div>
 
-              Despre noi
-
-            </a>
+      
+          <div id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 font-normal font-['Inter']">
+            <i className="fa-solid fa-phone mx-1"></i>
+            <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
           </div>
-          <div className="flex-auto">
-            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+        
 
-              Servicii
 
-            </div>
-          </div>
-          <div className="flex-auto">
-            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
+      </div>
 
-              Insolventa/Faliment
-
-            </div>
-          </div>
-          <div className="flex-auto">
-            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-
-              Licitatii
-
-            </div>
-          </div>
-          <div className="flex-auto">
-            <div className="h-20 pl-5 pr-4 border-l border-zinc-100 flex items-center">
-
-              Articole
-
-            </div>
-          </div>
-          <div className="flex-auto">
-            <div className="h-20 pl-5 pr-4 border-l border-r border-zinc-100 flex items-center">
-
-              Contact
-
-            </div>
+      <div id="row1Header" className="w-full hidden px1080:flex  flex-col ">
+        <div className="flex justify-center">
+          <img
+            id="logo"
+            className="w-[260px] h-20"
+            src="https://via.placeholder.com/260x86"
+            onClick={() => navigate("/")}
+          />
+          <div id="buttonsContainer" className="flex text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer">
+            <HeaderButton text="DESPRE NOI" navigate="/aboutUs" />
+            <HeaderButton text="ECHIPA" />
+            <HeaderButton text="SERVICII" />
+            <HeaderButton text="INSOLVENTA/FALIMENT" />
+            <HeaderButton text="LICITATII" />
+            <HeaderButton text="ARTICOLE" />
+            <HeaderButton text="CONTACT" />
           </div>
         </div>
+
+        <div id="row2Header" className="w-full flex justify-center ">
+          <Dropdown />
+          <input
+            id="searchBar"
+            className="w-[880px] border-2 border-first p-1"
+            placeholder="Search a keyword..."
+          ></input>
+        </div>
+
       </div>
 
-      <div id="row2Header" className="w-3/5 flex flex-row justify-start">
-        <Dropdown/>
-        <input
-          id="searchBar"
-          className="w-[880px] border-2 border-first p-1"
-          placeholder="Search a keyword..."
-        ></input>
-      </div>
     </div>
   );
 }

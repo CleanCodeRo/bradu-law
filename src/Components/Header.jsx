@@ -27,7 +27,7 @@ export default function Header() {
 
       <div className="w-full flex justify-center bg-first text-sm sm:text-base">
 
-        <div id="nameAndPhoneNumber" className="flex items-center sm:justify-between  flex-col xl:flex-row  w-full font-normal font-['Inter'] py-5 ">
+        <div id="nameAndPhoneNumber" className="flex items-center sm:justify-between  flex-col xl:flex-row  w-full font-normal font-['Inter'] py-3 px1080:py-5 ">
           <div id="lawyerName" className="flex items-center h-full ml-0 sm:ml-10 ">
             <img className="h-6 w-6 mx-1" src="images/book-with-marker_43139.png" />
             <p className="uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
@@ -40,15 +40,17 @@ export default function Header() {
         </div>
       </div>
 
+      <hr></hr>
+
 
       {/* //THIS IS A SMALL HEADER */}
-      <div id="SMALL HEADER" className=" w-full bg-first flex px1080:hidden items-center justify-between py-3">
+      <div id="SMALL HEADER" className=" w-full bg-first  flex flex-col md:flex-row px1080:hidden items-center justify-between py-3">
         <div className="flex items-center">
-        <LeftDrawer specialClass="mx-3" />
+        <LeftDrawer specialClass=" mx-1 w-5 h-5 sm:mx-3 sm:w-7 sm:h-7" />
         <img
           id="logo"
           className="w-[260px] h-20 rounded-lg"
-          src="https://via.placeholder.com/260x86"
+          src="images/wooden-judges-gavel-table-courtroom-enforcement-office.jpg"
           onClick={() => navigate("/")}
         />
         </div>
@@ -68,7 +70,7 @@ export default function Header() {
           <img
             id="logo"
             className="w-[260px] h-20"
-            src="https://via.placeholder.com/260x86"
+            src="images/wooden-judges-gavel-table-courtroom-enforcement-office.jpg"
             onClick={() => navigate("/")}
           />
           <div id="buttonsContainer" className="flex text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer">

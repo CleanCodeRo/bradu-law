@@ -1,79 +1,61 @@
 export default function Footer() {
+  const SpecialSlash = () => {
+    return <div className="  leading-[18.57px] mx-2">
+      /
+    </div>
+  }
+
+  const TextContainer = ({text}) =>{
+    return <div className="p-1 leading-[17.14px]">
+    {text}
+  </div>
+  }
+
+
   return (
     <div
       id="footer"
-      className="w-full h-[138.31px]  pb-[30px] bg-zinc-100 justify-center items-center inline-flex bg-first"
+      className="w-full  py-5 bg-zinc-100 justify-center items-center inline-flex bg-first"
     >
-      <div className="w-[1140px] h-[108.31px]   border-zinc-300 flex-col justify-start items-center flex">
+      <div className="text-neutral-500 text-s font-normal font-['Inter'] border-zinc-300 flex-col justify-start items-center flex">
         <div
           id="contactLoc"
-          className="w-full mt-3 mb-5 border-b border-zinc-300 justify-center items-center inline-flex"
-              >
-          <div className="w-fit h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px]">
+          className="  w-full border-b border-zinc-300 justify-center items-center inline-flex"
+        >
+          <div className="p-2 text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px]">
             Tel: +40 745 295 351 / Strada Aviator Maior Ștefan Sănătescu 44,
             Etaj 1, Sector 1, București 011478
           </div>
         </div>
-        <div id="buttons" className="flex flex-row h-10 w-fit">
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Asociatii si Fundatii
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Drept administrativ
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Drept civil
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Divort – Dreptul Familiei
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Drept societar
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Dreptul muncii
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Insolventa – Faliment
-          </div>
-          <div className="w-[3.83px] h-[15px] text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] ml-2 mr-2">
-            /
-          </div>
-          <div className="w-fit h-3.5 text-neutral-500 text-s font-normal font-['Inter'] leading-[17.14px]">
-            Proprietate intelectuala
-          </div>
+        <div id="buttons" className="flex flex-wrap justify-center p-3 w-fit">
+          <TextContainer text={"Asociatii si Fundatii"}/>
+          <SpecialSlash />
+
+          <TextContainer text={" Drept administrativ"}/>
+         <SpecialSlash />
+
+          <TextContainer text={"Drept civil"}/>
+          <SpecialSlash />
+
+          <TextContainer text={" Divort – Dreptul Familiei"}/>
+          <SpecialSlash />
+
+          
+          <TextContainer text={" Drept societar"}/>
+          <SpecialSlash />
+        
+          <TextContainer text={"Dreptul muncii"}/>
+          <SpecialSlash />
+
+          <TextContainer text={"  Insolventa – Faliment"}/>
+          <SpecialSlash />
+       
+          <TextContainer text={" Proprietate intelectuala"}/>
         </div>
-        <div id="copyright" className="w-fit h-3.5">
-          {/* <span className="w-fit text-neutral-500 text-s font-normal font-['Inter'] leading-tight ">
-            Copyright 2021 Ursarescu.ro - Cabinet Avocat si Insolventa Bucuresti
-            - Powered by{" "}
-          </span> */}
-          <span className="w-fit text-neutral-500 text-s font-normal font-['Inter'] leading-tight ">
+          <p className=" leading-tight text-center pt-4 ">
             Copyright 2021 bradu.ro - CABINET DE AVOCAT-CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA
-            - Powered by{" "}
-          </span>
-          <span className="text-neutral-500 text-s font-normal font-['Inter'] leading-tight">
-            TipoMedia
-          </span>
-        </div>
+            - Powered by TipoMedia
+          </p>
       </div>
     </div>
   );

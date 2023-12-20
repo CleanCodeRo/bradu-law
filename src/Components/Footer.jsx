@@ -6,7 +6,7 @@ export default function Footer() {
   }
 
   const TextContainer = ({text}) =>{
-    return <div className="p-1 leading-[17.14px]">
+    return <div className="p-1 leading-[17.14px] hover:text-[#c01707] cursor-pointer">
     {text}
   </div>
   }

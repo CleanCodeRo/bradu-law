@@ -8,15 +8,19 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
-      colors:{
-        first : "#F2F2F2" // ex gray
+      fontFamily: {
+        georgia: ['Georgia', 'sans serif'],
       },
-      screens : {
-        'px600' : '600px',
-        'px850' : '850px',
-        'px1080' : '1080px',
+      colors: {
+        first: "#F2F2F2", // ex gray
+        gray_text: "#6D6D6D"
+      },
+      screens: {
+        'px600': '600px',
+        'px850': '850px',
+        'px1080': '1080px',
         'px1450': '1450px',
-        'px1600' : '1600px'
+        'px1600': '1600px'
       },
     },
   },

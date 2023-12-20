@@ -12,7 +12,7 @@ export default function Header() {
   const HeaderButton = ({ text, navigate }) => {
     return (
 
-      <a href={navigate} className="  pl-5 pr-4 py-4 border-l border-zinc-100 flex items-center">
+      <a href={navigate} className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
         {text}
       </a>
 
@@ -27,10 +27,10 @@ export default function Header() {
 
       <div className="w-full flex justify-center bg-first text-sm sm:text-base">
 
-        <div id="nameAndPhoneNumber" className="flex items-center sm:justify-between  flex-col xl:flex-row  w-full font-normal font-['Inter'] py-3 px1080:py-5 ">
+        <div id="nameAndPhoneNumber" className="flex items-center sm:justify-between  flex-col xl:flex-row  w-full font-normal font-['Inter'] py-3 px1080:py-2.5 ">
           <div id="lawyerName" className="flex items-center h-full ml-0 sm:ml-10 ">
             <img className="h-6 w-6 mx-1" src="images/book-with-marker_43139.png" />
-            <p className="uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
+            <p className="uppercase">Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
           </div>
 
           <div id="lawyerContact" className="hidden px1080:flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 ">
@@ -66,14 +66,14 @@ export default function Header() {
       </div>
 
       <div id="row1Header" className="w-full hidden px1080:flex  flex-col ">
-        <div className="flex justify-center">
+        <div className="flex justify-center h-[88px]">
           <img
             id="logo"
-            className="w-[260px] h-20"
+            className="w-[260px] h-21 mt-0.5"
             src="images/wooden-judges-gavel-table-courtroom-enforcement-office.jpg"
             onClick={() => navigate("/")}
           />
-          <div id="buttonsContainer" className="flex text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer">
+          <div id="buttonsContainer" className="flex text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer ">
             <HeaderButton text="DESPRE NOI" navigate="/aboutUs" />
             <HeaderButton text="ECHIPA" />
             <HeaderButton text="SERVICII" />
@@ -84,14 +84,17 @@ export default function Header() {
           </div>
         </div>
 
-        <div id="row2Header" className="w-full flex justify-center ">
-          <Dropdown />
-          <input
-            id="searchBar"
-            className="w-[880px] border-2 border-first p-1"
-            placeholder="Search a keyword..."
-          ></input>
-        </div>
+        <div id="row2Header" class="w-full flex justify-center items-center">
+  <div id="row2Wrapper" class="w-[1140px] bg-first flex items-center">
+    <Dropdown />
+    <input
+      id="searchBar"
+      class="w-[845px] h-[35px] border p-3 outline-0"
+      placeholder="Search a keyword..."
+    />
+  </div>
+</div>
+
 
       </div>
 

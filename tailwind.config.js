@@ -12,6 +12,8 @@ module.exports = withMT({
         first : "#F2F2F2" // ex gray
       },
       screens : {
+        'px300' : '300px',
+        'px400' : '400px',
         'px600' : '600px',
         'px850' : '850px',
         'px1080' : '1080px',

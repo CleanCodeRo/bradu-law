@@ -16,9 +16,11 @@ module.exports = withMT({
         gray_text: "#6D6D6D"
       },
       screens: {
-        'px600': '600px',
-        'px850': '850px',
-        'px1080': '1080px',
+        'px300' : '300px',
+        'px400' : '400px',
+        'px600' : '600px',
+        'px850' : '850px',
+        'px1080' : '1080px',
         'px1450': '1450px',
         'px1600': '1600px'
       },

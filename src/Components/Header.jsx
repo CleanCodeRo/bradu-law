@@ -75,7 +75,7 @@ export default function Header() {
           />
           <div id="buttonsContainer" className="flex text-neutral-500 text-sm font-normal font-['Inter'] uppercase leading-tight cursor-pointer ">
             <HeaderButton text="DESPRE NOI" navigate="/aboutUs" />
-            <HeaderButton text="ECHIPA" />
+            <HeaderButton text="ECHIPA" navigate="/team" />
             <HeaderButton text="SERVICII" />
             <HeaderButton text="INSOLVENTA/FALIMENT" />
             <HeaderButton text="LICITATII" />

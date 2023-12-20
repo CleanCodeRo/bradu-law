@@ -6,7 +6,7 @@ export default function Team() {
 
         return (
             <div className="flex flex-col lg:flex-row w-full text-sm mb-8">
-                <img className="w-auto h-auto px400:h-[450px] px400:w-[300px] mb-3 lg:mr-16" src={image} />
+                <img draggable="false" className="w-auto h-auto px400:h-[450px] px400:w-[300px] mb-3 lg:mr-16" src={image} />
 
                 <div className="flex flex-col px-3 w-full">
                     <p className="font-bold">{name}</p>
@@ -30,6 +30,7 @@ export default function Team() {
                 <img
                     src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
                     className=" sm:h-[25rem] w-full object-cover rounded-b-lg"
+                    draggable="false"
                 />
 
                 <div className="my-8 flex items-center justify-between  relative">

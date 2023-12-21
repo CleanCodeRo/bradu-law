@@ -8,15 +8,15 @@ export default function CabinetDetails() {
         <div className="w-full flex justify-center font-normal font-['Inter']">
             <div className="w-11/12 md:w-5/6 xl:w-3/5  my-20  text-gray_text font-georgia">
                 <div id="firtPart" className="">
-                    <p className="font-bold  text-center text-xl sm:text-2xl uppercase">Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
-                    <p className="text-center mt-4">acordă asistență și reprezentare juridică în domenii de drept comercial, înființări societăți, drept civil, dreptul familiei, dreptul muncii, proprietate intelectuală, procedura insolvenței, recuperări creanțe,
+                    <p className="font-bold  text-center text-xl uppercase">Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
+                    <p className="text-center text-sm mt-4">acordă asistență și reprezentare juridică în domenii de drept comercial, înființări societăți, drept civil, dreptul familiei, dreptul muncii, proprietate intelectuală, procedura insolvenței, recuperări creanțe,
                         drept administrativ, asociații și fundații etc.
                     </p>
-                    <p className="mt-4 text-center"><span className="font-bold">Cabinetul de Insolvență</span> oferă servicii în etapa de pre-insolvență, insolvență, reorganizare judiciară, faliment, lichidare voluntară la Registrul Comerțului.</p>
+                    <p className="mt-4 text-center text-sm"><span className="font-bold">Cabinetul de Insolvență</span> oferă servicii în etapa de pre-insolvență, insolvență, reorganizare judiciară, faliment, lichidare voluntară la Registrul Comerțului.</p>
                 </div>
 
-                <div id="secondPart" className="">
-                    <p className="font-bold text-lg text-center mt-10 uppercase">Domenii de practica – Cabinet de Avocat Bucuresti</p>
+                <div id="secondPart" className="text-[13px]">
+                    <p className="font-bold  text-center mt-10 uppercase">Domenii de practica – Cabinet de Avocat Bucuresti</p>
                     <hr className="my-5"></hr>
                     <div id="iconsGrid" className="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-16">
                         <IconDetailCard image="images/parental-control_3092920.png" title={"Dreptul Familiei – Cabinet de avocat"} text={"Referitor la acțiunile întemeiate pe relațiile de familie, asigurăm asistarea și reprezentarea în cadrul procedurilor de Divorț (divorț notar, divorț instanță) indiferent dacă sunt divorțuri întemeiate pe culpa comună a soților cât și culpa exclusivă a unuia dintre soți …"} />

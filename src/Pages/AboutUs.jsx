@@ -6,7 +6,7 @@ export default function AboutUs() {
 
 
     return (
-        <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700">
+        <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700 font-['intel']">
             <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 ">
                 <img
                     src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
@@ -14,16 +14,16 @@ export default function AboutUs() {
                 />
 
                 <div id="otherDetails" className="w-full">
-                    <div id="title" className="w-full flex justify-center items-center my-8">
-                        <div className="bg-gray-300 h-1 w-[10%]"></div>
-                        <p className="text-center w-[80%] font-bold  sm:text-lg uppercase">Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
-                        <div className="bg-gray-300 h-1 w-[10%]"></div>
+                    <div id="title" className="w-full flex justify-center items-center my-8 relative">
+                        <div className="bg-gray-300 h-[2px] w-full"></div>
+                        <p className="text-center bg-white px-2 font-bold  sm:text-lg uppercase absolute">Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
+
                     </div>
 
-                    <div id="description" className="text-sm sm:text-base">
-                        <p className="my-3">Bine ați venit la Cabinetul de Avocatură Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina!</p>
-                        <p className="my-3">punem accent pe integritate, competență și relații de încredere cu clienții noștri. Fie că aveți nevoie de asistență în dreptul afacerilor, dreptul familiei, dreptul penal sau oricare altă sferă juridică, suntem aici să vă ghidăm și să vă reprezentăm cu profesionalism și devotament.</p>
-                        <p className="my-3">Echipa noastră de avocați pasionați se străduiește să ofere consultanță juridică clară și eficientă, având ca obiectiv principal obținerea rezultatelor dorite pentru clienții noștri. </p>
+                    <div id="description" className="text-sm ">
+                        <p className="my-2.5">Bine ați venit la Cabinetul de Avocatură Cabinet de Avocat-Cabinet Individual de Insolventa Bradu Nicoleta-Dorina!</p>
+                        <p className="my-2.5">punem accent pe integritate, competență și relații de încredere cu clienții noștri. Fie că aveți nevoie de asistență în dreptul afacerilor, dreptul familiei, dreptul penal sau oricare altă sferă juridică, suntem aici să vă ghidăm și să vă reprezentăm cu profesionalism și devotament.</p>
+                        <p className="my-2.5">Echipa noastră de avocați pasionați se străduiește să ofere consultanță juridică clară și eficientă, având ca obiectiv principal obținerea rezultatelor dorite pentru clienții noștri. </p>
                     </div>
 
                     <hr className="mt-10 mb-3"></hr>

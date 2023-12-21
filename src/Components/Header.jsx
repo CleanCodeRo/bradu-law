@@ -30,12 +30,12 @@ export default function Header() {
           </a>
         </PopoverHandler>
         <PopoverContent className="rounded-sm font-['Inter'] font-bold">
-          <p className="text-gray_text text-sm py-1.5">{title}</p>
-          {dropdownTexts?.map((item, index) =>        
-              <div  key={index} className="hover:text-[#c01707]  text-[11px] select-none p-[2px]">
-                <a className="w-full h-full" href={dropdownLinks[index]}>{item}</a>
-              </div>
-           )}
+          <p className="text-gray_text text-sm py-1.5 text-center">{title}</p>
+          {dropdownTexts?.map((item, index) =>
+            <div key={index} className="hover:text-[#c01707]  text-[11px] select-none p-[2px]">
+              <a className="w-full h-full" href={dropdownLinks[index]}>{item}</a>
+            </div>
+          )}
         </PopoverContent>
       </Popover>
     )
@@ -120,6 +120,9 @@ export default function Header() {
               className="w-[845px] h-[35px] border p-3 outline-0 text-gray_text placeholder-gray_text text-[12px] font-['inter'] font-bold uppercase"
               placeholder="ENTER KEYWORDS HERE ..."
             />
+            <button className=" text-center w-6 h-6 ml-1 hover:bg-gray-300 rounded-sm">
+              <i class="fa-solid fa-magnifying-glass  text-xs"></i>
+            </button>
           </div>
         </div>
       </div>

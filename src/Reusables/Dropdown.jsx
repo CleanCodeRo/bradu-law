@@ -7,7 +7,7 @@ function classNames(...classes) {
 }
 
 let options = ["DREPT CIVIL","DREPTUL FAMILIEI","DREPT SOCIETAR","GDPR","INSOLVENTA / FALIMENT","DREPT ADMINISTRATIV","DREPTUL MUNCII","PROPRIETATE INTELECTUALA","ASOCIATII SI FUNDATII"]
-
+let icons = ["images/judge_1705255.png", "images/parental-control_3092920.png", "images/construction_8434403.png", "images/shield_3177389.png", "images/sound-bar_6612869.png", "images/open-book-lectern_78480.png", "", "", ""]
 export default function Dropdown() {
 
 
@@ -44,10 +44,10 @@ export default function Dropdown() {
                 href="#"
                 className={classNames(
                   active ? "bg-gray-100 text-red-900" : "text-gray-700",
-                  " px-4 py-2 text-xs font-extrabold border-b flex items-center"
+                  " px-4 py-3 text-[11.4px] font-extrabold border-b flex items-center"
                 )}
               >
-                <img className="w-4 h-4" src="images/judge_1705255.png"/>
+                <img className="w-[22px] h-[22px]" src={icons[index]}/>
                <p className="ml-3">{option}</p>
               </a>
             )}

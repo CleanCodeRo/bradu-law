@@ -24,7 +24,7 @@ export default function Header() {
     return (
       <Popover>
         <PopoverHandler>
-          <a href={navigate} className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
+          <a  className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
             <p>{text}</p>
             <i className="fa-solid fa-angle-down first-letter text-[10px] mx-[4px] "></i>
           </a>
@@ -121,7 +121,7 @@ export default function Header() {
               placeholder="ENTER KEYWORDS HERE ..."
             />
             <button className=" text-center w-6 h-6 ml-1 hover:bg-gray-300 rounded-sm">
-              <i class="fa-solid fa-magnifying-glass  text-xs"></i>
+              <i className="fa-solid fa-magnifying-glass  text-xs"></i>
             </button>
           </div>
         </div>

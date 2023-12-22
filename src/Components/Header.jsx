@@ -107,7 +107,7 @@ export default function Header() {
             />
             <HeaderButton text="LICITATII" />
             <HeaderButton text="ARTICOLE" />
-            <HeaderButton text="CONTACT" />
+            <HeaderButton text="CONTACT" navigate="/contact"/>
           </div>
         </div>
 

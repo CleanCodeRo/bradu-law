@@ -107,7 +107,7 @@ export default function Header() {
             />
             <HeaderButton text="LICITATII" />
             <HeaderButton text="ARTICOLE" />
-            <HeaderButton text="CONTACT" />
+            <HeaderButton text="CONTACT" navigate="/contact"/>
           </div>
         </div>
 
@@ -121,7 +121,7 @@ export default function Header() {
               placeholder="ENTER KEYWORDS HERE ..."
             />
             <button className=" text-center w-6 h-6 ml-1 hover:bg-gray-300 rounded-sm">
-              <i class="fa-solid fa-magnifying-glass  text-xs"></i>
+              <i className="fa-solid fa-magnifying-glass  text-xs"></i>
             </button>
           </div>
         </div>

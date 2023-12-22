@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="w-full  pb-5 bg-zinc-100 justify-center items-center inline-flex bg-first"
+      className="w-full  pb-5 bg-zinc-100 justify-center items-center inline-flex bg-first  bottom-0 "
     >
       <div className="text-neutral-500 text-sm text-gray_text font-normal font-['Inter'] border-zinc-300 flex-col justify-start items-center flex">
         <div

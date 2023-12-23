@@ -24,7 +24,10 @@ export function LeftDrawer({ specialClass }) {
 
   return (
     <React.Fragment>
-      <div onClick={openDrawer}><img className={` ${specialClass}`} src="images/menu_10242916.png" /></div>
+      <div onClick={openDrawer}>
+        {/* <img className={` ${specialClass}`} src="images/menu_10242916.png" /> */}
+        <i className={`fa-solid fa-bars text-2xl ${specialClass}`}></i>
+        </div>
       <Drawer open={open} onClose={closeDrawer}>
         <div className="mb-2 flex items-center justify-between p-4">
           <Typography variant="h5" color="blue-gray">

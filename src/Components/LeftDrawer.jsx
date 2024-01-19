@@ -90,26 +90,32 @@ export function LeftDrawer({ specialClass }) {
             </ListItemSuffix>
           </ListItem>
 
+          <a href="/auctions">
           <ListItem>
             <ListItemPrefix>
               <i className="fa-solid fa-gavel"></i>
             </ListItemPrefix>
             Licitatii
           </ListItem>
+          </a>
 
+          <a href="/articles">
           <ListItem>
             <ListItemPrefix>
               <i className="fa-solid fa-newspaper"></i>
             </ListItemPrefix>
             Articole
           </ListItem>
+          </a>
 
+          <a href="/contact">
           <ListItem>
             <ListItemPrefix>
               <i className="fa-solid fa-address-book"></i>
             </ListItemPrefix>
             Contact
           </ListItem>
+          </a>
 
         </List>
 

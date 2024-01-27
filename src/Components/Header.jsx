@@ -24,7 +24,7 @@ export default function Header() {
     return (
       <Popover>
         <PopoverHandler>
-          <a href={navigate} className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
+          <a  className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
             <p>{text}</p>
             <i className="fa-solid fa-angle-down first-letter text-[10px] mx-[4px] "></i>
           </a>
@@ -64,8 +64,8 @@ export default function Header() {
       <hr></hr>
 
       {/* //THIS IS A SMALL HEADER */}
-      <div id="SMALL HEADER" className=" w-full bg-first  flex flex-col md:flex-row px1080:hidden items-center justify-between py-3">
-        <div className="flex items-center">
+      <div id="SMALL HEADER" className=" w-full bg-first text-gray_text flex flex-col md:flex-row px1080:hidden items-center justify-between py-3">
+        <div className="flex items-center ">
           <LeftDrawer specialClass=" mx-1 w-5 h-5 sm:mx-3 sm:w-7 sm:h-7" />
           <img
             id="logo"
@@ -76,9 +76,9 @@ export default function Header() {
           />
         </div>
 
-        <div id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 font-normal font-['Inter']">
+        <div id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0  font-bold font-['Inter']">
           <i className="fa-solid fa-phone mx-1"></i>
-          <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
+          <p className="text-sm">CONTACT RAPID : <span className="text-red-300">0743 378 380</span></p>
         </div>
       </div>
 
@@ -105,8 +105,8 @@ export default function Header() {
               dropdownTexts={["PRODUCERI IN CURS", "PRODUCERI INCHEIATE", "PRODUCERI ADMINISTRATOR SCHIMBAT"]}
               dropdownLinks={["#", "#", "#"]}
             />
-            <HeaderButton text="LICITATII" />
-            <HeaderButton text="ARTICOLE" />
+            <HeaderButton text="LICITATII" navigate={"/auctions"}/>
+            <HeaderButton text="ARTICOLE" navigate={"/articles"}/>
             <HeaderButton text="CONTACT" navigate="/contact"/>
           </div>
         </div>

@@ -8,6 +8,8 @@ import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
+import Auctions from './Pages/Auctions';
+import Articles from './Pages/Articles';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
         <Route path="/aboutUs" element={<AboutUs/>}> </Route>
         <Route path="/team" element={<Team/>}> </Route>
         <Route path="/contact" element={<Contact/>}> </Route>
+        <Route path="/auctions" element={<Auctions/>}> </Route>
+        <Route path="/articles" element={<Articles/>}> </Route>
       </Routes>
     <Footer/>
     </BrowserRouter>

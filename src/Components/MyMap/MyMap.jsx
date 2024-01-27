@@ -13,7 +13,7 @@ function MyMap() {
     const initialState = {
       lng: 26.175283,
       lat: 44.425322,
-      zoom: 16.7
+      zoom: 9
     };
 
     const map = new maplibre.Map({

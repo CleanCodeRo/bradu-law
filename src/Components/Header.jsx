@@ -70,7 +70,7 @@ export default function Header() {
           <img
             id="logo"
             className="w-[260px] h-20 rounded-lg"
-            src="images/wooden-judges-gavel-table-courtroom-enforcement-office.jpg"
+            src="images/Untitled.png"
             onClick={() => navigate("/")}
             draggable="false"
           />
@@ -87,7 +87,7 @@ export default function Header() {
           <img
             id="logo"
             className="w-[260px] h-21 mt-0.5"
-            src="images/wooden-judges-gavel-table-courtroom-enforcement-office.jpg"
+            src="images/Untitled.png"
             onClick={() => navigate("/")}
           />
           <div id="buttonsContainer" className="flex text-neutral-500 text-sm text-gray_text font-normal font-['Inter'] uppercase leading-tight cursor-pointer ">

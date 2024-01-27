@@ -1,4 +1,5 @@
 import React from "react";
+import Dropdown from "../Reusables/Dropdown";
 import {
   Drawer,
   Typography,
@@ -7,7 +8,13 @@ import {
   ListItem,
   ListItemPrefix,
   ListItemSuffix,
+  Popover,
+  PopoverHandler,
+  PopoverContent,
+  Button,
+  Menu,
 } from "@material-tailwind/react";
+
 
 
 
@@ -23,12 +30,14 @@ export function LeftDrawer({ specialClass }) {
 
 
   return (
+
     <React.Fragment>
       <div onClick={openDrawer}>
         {/* <img className={` ${specialClass}`} src="images/menu_10242916.png" /> */}
         <i className={`fa-solid fa-bars text-2xl ${specialClass}`}></i>
-        </div>
-      <Drawer open={open} onClose={closeDrawer}>
+
+      </div>
+      <Drawer open={open} onClose={closeDrawer} overlay={true}>
         <div className="mb-2 flex items-center justify-between p-4">
           <Typography variant="h5" color="blue-gray">
             MENU
@@ -69,11 +78,23 @@ export function LeftDrawer({ specialClass }) {
             </ListItem>
           </a>
 
-          <ListItem>
+          <ListItem >
             <ListItemPrefix>
               <i className="fa-solid fa-bell-concierge"></i>
+
             </ListItemPrefix>
-            SERVICE
+            <Popover placement="right-end"  >
+          <PopoverHandler>
+            <div>Servicii</div>
+          </PopoverHandler>
+          
+          <PopoverContent className="!absolute !z-[9999]">
+            <div >This is a very beautiful popover, show some love.</div>
+          </PopoverContent>
+          
+          
+        </Popover>
+
             <ListItemSuffix>
               <i className="fa-solid fa-angle-down first-letter text-sm mx-[4px] "></i>
             </ListItemSuffix>
@@ -91,30 +112,30 @@ export function LeftDrawer({ specialClass }) {
           </ListItem>
 
           <a href="/auctions">
-          <ListItem>
-            <ListItemPrefix>
-              <i className="fa-solid fa-gavel"></i>
-            </ListItemPrefix>
-            Licitatii
-          </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <i className="fa-solid fa-gavel"></i>
+              </ListItemPrefix>
+              Licitatii
+            </ListItem>
           </a>
 
           <a href="/articles">
-          <ListItem>
-            <ListItemPrefix>
-              <i className="fa-solid fa-newspaper"></i>
-            </ListItemPrefix>
-            Articole
-          </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <i className="fa-solid fa-newspaper"></i>
+              </ListItemPrefix>
+              Articole
+            </ListItem>
           </a>
 
           <a href="/contact">
-          <ListItem>
-            <ListItemPrefix>
-              <i className="fa-solid fa-address-book"></i>
-            </ListItemPrefix>
-            Contact
-          </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <i className="fa-solid fa-address-book"></i>
+              </ListItemPrefix>
+              Contact
+            </ListItem>
           </a>
 
         </List>

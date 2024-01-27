@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react'; 
-import MyMap from '../Components/MyMap';
+import MyMap from '../Components/MyMap/MyMap';
 
 
 

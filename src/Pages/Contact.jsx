@@ -41,9 +41,9 @@ export default function Contact(){
         <p className="font-bold relative top-0 w-fit text-center mt-0 ">Email:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">cevacorect@gmail.com</p>
         </div>
         <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Program:</p>
-        <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Luni-Vineri: 09:00 - 17:00</p>
+        <p className=" relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Luni-Vineri: 09:00 - 17:00</p>
         <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Adresa:</p>
-        <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Strada Sforii 1,Brasov, 011478</p>
+        <p className=" relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Strada Liviu Rebreanu 29</p>
                             
                         
         

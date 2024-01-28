@@ -63,6 +63,7 @@ export default function Header() {
 
       <hr></hr>
 
+
       {/* //THIS IS A SMALL HEADER */}
       <div id="SMALL HEADER" className=" w-full bg-first text-gray_text flex flex-col md:flex-row px1080:hidden items-center justify-between py-3">
         <div className="flex items-center ">
@@ -81,6 +82,8 @@ export default function Header() {
           <p className="text-sm">CONTACT RAPID : <span className="text-red-300">0743 378 380</span></p>
         </div>
       </div>
+      {/* //THIS IS A SMALL HEADER */}
+      
 
       <div id="row1Header" className="w-full hidden px1080:flex  flex-col ">
         <div className="flex justify-center h-[88px]">

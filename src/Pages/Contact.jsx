@@ -29,7 +29,7 @@ export default function Contact(){
         <p className="font-bold relative top-0 w-fit text-center mt-0 mb-2.5 uppercase text-[14px]">Contact</p>
         <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Cabinet de Avocat Bradu Nicoleta-Dorina</p>
         <div className="flex mt-1.5 mb-2.5">
-        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Tel:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">+40726.212.737</p>
+        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Tel:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">+40 726 212 737</p>
         </div>
         
         <div className="flex mt-1.5 mb-2.5 ">

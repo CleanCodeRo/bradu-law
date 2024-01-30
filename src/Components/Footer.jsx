@@ -23,39 +23,29 @@ export default function Footer() {
           className="  w-full border-b border-zinc-300 justify-center items-center inline-flex"
         >
           <div className="pt-6 w-full text-center text-neutral-500 text-s font-normal font-['Inter'] leading-[18.57px] border-y border-gray-300">
-            Tel: +40 745 295 351 / Strada Aviator Maior Ștefan Sănătescu 44,
-            Etaj 1, Sector 1, București 011478
+            Tel: +40 726 212 737 / Email: avocatnicoleta.bradu@gmail.com
           </div>
          
         </div>
         <div id="buttons" className="flex flex-wrap justify-center items-center p-3 w-fit">
-          <TextContainer text={"Asociatii si Fundatii"}/>
-          <SpecialSlash />
 
-          <TextContainer text={" Drept administrativ"}/>
+          <TextContainer text={"Drept comercial si societar"}/>
          <SpecialSlash />
 
-          <TextContainer text={"Drept civil"}/>
+          <TextContainer text={"Recuperari Creante"}/>
           <SpecialSlash />
 
-          <TextContainer text={" Divort – Dreptul Familiei"}/>
-          <SpecialSlash />
-
-          
-          <TextContainer text={" Drept societar"}/>
-          <SpecialSlash />
-        
-          <TextContainer text={"Dreptul muncii"}/>
-          <SpecialSlash />
-
-          <TextContainer text={"  Insolventa – Faliment"}/>
+          <TextContainer text={" Insolventa – Faliment"}/>
           <SpecialSlash />
        
-          <TextContainer text={" Proprietate intelectuala"}/>
+          <TextContainer text={"Due Diligence"}/>
+          <SpecialSlash />
+
+          <TextContainer text={"GDPR"}/>
+
         </div>
           <p className=" leading-tight text-xs text-center ">
-            Copyright 2021 bradu.ro - CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA
-            - Powered by TipoMedia
+            Copyright 2024 bradu.ro - CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA
           </p>
       </div>
     </div>

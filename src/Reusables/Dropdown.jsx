@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-let options = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "GDPR"]
+let options = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTA", "DUE DILIGENCE", "GDPR"]
 let icons = ["images/judge_1705255.png", "images/parental-control_3092920.png", "images/construction_8434403.png", "images/sound-bar_6612869.png", "images/shield_3177389.png"]
 
 export default function Dropdown() {

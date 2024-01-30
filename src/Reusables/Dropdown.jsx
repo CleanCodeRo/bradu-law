@@ -7,8 +7,8 @@ function classNames(...classes) {
 }
 
 let options = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
-let icons = ["images/judge_1705255.png", "images/parental-control_3092920.png", "images/construction_8434403.png", "images/sound-bar_6612869.png", " " ,"images/shield_3177389.png"]
-let links = ["#","#","#","/dueDiligence","#"]
+let icons = ["images/judge_1705255.png", "images/parental-control_3092920.png", "images/construction_8434403.png", "images/sound-bar_6612869.png", "images/consult_7997942.png " ,"images/shield_3177389.png"]
+let links = ["#","#","#","/dueDiligence","/legalAdvice","#"]
 
 export default function Dropdown() {
 

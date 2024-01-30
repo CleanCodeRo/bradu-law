@@ -24,7 +24,7 @@ export function LeftDrawer({ specialClass }) {
   const closeDrawer = () => setOpen(false);
 
   let serviceOptions = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
-  let serviceOptionsLinks = ["#","#","#","/dueDiligence","#"]
+  let serviceOptionsLinks = ["#","#","#","/dueDiligence","/legalAdvice", "#"]
 
   // let insolventaSiFalimentOptions = ["PROCEDERI IN CURS", "PROCEDERI INCHEIATE", "PROCEDERI ADMINISTRATOR SCHIMBAT"]
   // let insolventaSiFalimentOptionsLinks = ["#", "#", "#"]

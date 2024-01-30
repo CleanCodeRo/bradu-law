@@ -12,6 +12,7 @@ import Auctions from './Pages/Auctions';
 import Articles from './Pages/Articles';
 import DueDilligince from './Pages/DueDilligince';
 import Insolvency_Bankruptcy from './Pages/Insolvency_Bankruptcy';
+import LegalAdvice from './Pages/LegalAdvice';
 
 export default function App() {
   return (
@@ -26,6 +27,10 @@ export default function App() {
         <Route path="/articles" element={<Articles/>}> </Route>
         <Route path="/dueDiligence" element={<DueDilligince/>}> </Route>
         <Route path="/insolvencyBankruptcy" element={<Insolvency_Bankruptcy/>}> </Route>
+        <Route path="/legalAdvice" element={<LegalAdvice/>}> </Route>
+        
+        
+
       </Routes>
     <Footer/>
     </BrowserRouter>

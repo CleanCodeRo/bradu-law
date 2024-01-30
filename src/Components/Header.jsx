@@ -24,7 +24,7 @@ export default function Header() {
     return (
       <Popover>
         <PopoverHandler>
-          <a  className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
+          <a className="  pl-5 pr-4 py-4 h-[84px]  border-l border-zinc-100 flex items-center hover:text-[#c01707]">
             <p>{text}</p>
             <i className="fa-solid fa-angle-down first-letter text-[10px] mx-[4px] "></i>
           </a>
@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <div
       id="Header"
-      className="w-full h-fit  bg-white flex items-center flex-col justify-center  "
+      className="w-full h-fit  bg-white flex items-center flex-col justify-center relative "
     >
 
       <div className="w-full flex justify-center text-gray_text bg-first text-xs">
@@ -83,7 +83,7 @@ export default function Header() {
         </div>
       </div>
       {/* //THIS IS A SMALL HEADER */}
-      
+
 
       <div id="row1Header" className="w-full hidden px1080:flex  flex-col ">
         <div className="flex justify-center h-[88px]">
@@ -109,10 +109,10 @@ export default function Header() {
               dropdownTexts={["PRODUCERI IN CURS", "PRODUCERI INCHEIATE", "PRODUCERI ADMINISTRATOR SCHIMBAT"]}
               dropdownLinks={["#", "#", "#"]}
             /> */}
-             <HeaderButton text="INSOLVENTA / FALIMENT" navigate={"/insolvencyBankruptcy"}/>
-            <HeaderButton text="LICITATII" navigate={"/auctions"}/>
-            <HeaderButton text="ARTICOLE" navigate={"/articles"}/>
-            <HeaderButton text="CONTACT" navigate="/contact"/>
+            <HeaderButton text="INSOLVENTA / FALIMENT" navigate={"/insolvencyBankruptcy"} />
+            <HeaderButton text="LICITATII" navigate={"/auctions"} />
+            <HeaderButton text="ARTICOLE" navigate={"/articles"} />
+            <HeaderButton text="CONTACT" navigate="/contact" />
           </div>
         </div>
 
@@ -131,6 +131,10 @@ export default function Header() {
           </div>
         </div>
       </div>
+
+
+      
+
     </div>
   );
 }

@@ -13,6 +13,7 @@ import Articles from './Pages/Articles';
 import DueDilligince from './Pages/DueDilligince';
 import Insolvency_Bankruptcy from './Pages/Insolvency_Bankruptcy';
 import LegalAdvice from './Pages/LegalAdvice';
+import WappComponent from './Components/WappComponent';
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         
 
       </Routes>
+      <WappComponent/>
     <Footer/>
     </BrowserRouter>
   );

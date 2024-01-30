@@ -19,7 +19,7 @@ export default function Contact(){
                 <div id="otherDetails" className="w-full">
                     <div id="title" className="w-full flex justify-center items-center my-8 relative">
                         <div className="bg-gray-300 h-[2px] w-full"></div>
-                        <p className="text-center bg-white px-2 font-bold  sm:text-lg uppercase absolute">CABINET DE AVOCAT- CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p>
+                        <p className="text-center bg-white px-2 font-bold  sm:text-lg uppercase absolute">CABINET DE AVOCAT - CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p>
                     </div>
 
                     <div id="iconsDetails" className="w-full   grid grid-cols-1 px768:grid-cols-2 gap-x-3 gap-y-3 mb-2.5">
@@ -31,12 +31,7 @@ export default function Contact(){
         <div className="flex mt-1.5 mb-2.5">
         <p className="font-bold relative top-0 w-fit text-center mt-0 ">Tel:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">+40726.212.737</p>
         </div>
-        <div className="flex mt-1.5 mb-2.5 ">
-        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Fix:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">+40730167941</p>
-        </div>
-        <div className="flex mt-1.5 mb-2.5 ">
-        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Fax:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">+40730167941</p>
-        </div>
+        
         <div className="flex mt-1.5 mb-2.5 ">
         <p className="font-bold relative top-0 w-fit text-center mt-0 ">Email:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">avocatnicoleta.bradu@gmail.com</p>
         

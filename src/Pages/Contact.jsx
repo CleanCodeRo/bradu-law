@@ -14,6 +14,7 @@ export default function Contact(){
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Yusuf_è_un_profeta.jpeg"
                     className=" sm:h-[25rem] w-full object-cover rounded-b-lg"
+                    draggable="false"
                 />
 
                 <div id="otherDetails" className="w-full">

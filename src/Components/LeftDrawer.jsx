@@ -23,13 +23,11 @@ export function LeftDrawer({ specialClass }) {
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
 
+  let serviceOptions = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
+  let serviceOptionsLinks = ["#","#","#","/dueDiligence","#"]
 
-
-  let serviceOptions = ["DREPT CIVIL", "DREPTUL FAMILIEI", "DREPT SOCIETAR", "GDPR", "INSOLVENTA / FALIMENT", "DREPT ADMINISTRATIV", "DREPTUL MUNCII", "PROPRIETATE INTELECTUALA", "ASOCIATII SI FUNDATII"]
-  let serviceOptionsLinks = ["#", "#", "#", "#", "#", "#", "#", "#", "#", "#"]
-
-  let insolventaSiFalimentOptions = ["PROCEDERI IN CURS", "PROCEDERI INCHEIATE", "PROCEDERI ADMINISTRATOR SCHIMBAT"]
-  let insolventaSiFalimentOptionsLinks = ["#", "#", "#"]
+  // let insolventaSiFalimentOptions = ["PROCEDERI IN CURS", "PROCEDERI INCHEIATE", "PROCEDERI ADMINISTRATOR SCHIMBAT"]
+  // let insolventaSiFalimentOptionsLinks = ["#", "#", "#"]
 
   return (
 
@@ -102,9 +100,13 @@ export function LeftDrawer({ specialClass }) {
             </Popover>
           </ListItem>
 
-
+          <a href="/insolvencyBankruptcy">
           <ListItem>
-            <Popover placement="bottom-start"  >
+            <ListItemPrefix>
+            <i className="fa-solid fa-circle-dollar-to-slot"></i>
+            </ListItemPrefix>
+            <p>INSOLVENTA/FALIMENT</p>
+            {/* <Popover placement="bottom-start"  >
               <PopoverHandler>
                 <div id="optionButton" className="w-full h-full flex justify-between">
                   <div className="flex">
@@ -122,8 +124,9 @@ export function LeftDrawer({ specialClass }) {
                     <a className="w-full h-full" href={insolventaSiFalimentOptionsLinks[index]}>{option}</a>
                   </div>)}
               </PopoverContent>
-            </Popover>
+            </Popover> */}
           </ListItem>
+          </a>
 
           <a href="/auctions">
             <ListItem>

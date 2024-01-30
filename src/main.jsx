@@ -10,6 +10,8 @@ import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import Auctions from './Pages/Auctions';
 import Articles from './Pages/Articles';
+import DueDilligince from './Pages/DueDilligince';
+import Insolvency_Bankruptcy from './Pages/Insolvency_Bankruptcy';
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
         <Route path="/contact" element={<Contact/>}> </Route>
         <Route path="/auctions" element={<Auctions/>}> </Route>
         <Route path="/articles" element={<Articles/>}> </Route>
+        <Route path="/dueDiligence" element={<DueDilligince/>}> </Route>
+        <Route path="/insolvencyBankruptcy" element={<Insolvency_Bankruptcy/>}> </Route>
       </Routes>
     <Footer/>
     </BrowserRouter>

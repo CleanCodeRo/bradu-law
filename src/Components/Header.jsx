@@ -56,7 +56,7 @@ export default function Header() {
 
           <div id="lawyerContact" className="hidden px1080:flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 font-bold ">
             <i className="fa-solid fa-phone mx-1"></i>
-            <p>CONTACT RAPID : <span className="text-red-300 font-bold">0743 378 380</span></p>
+            <p>CONTACT RAPID : <span className="text-red-300 font-bold cursor-pointer hover:text-[#c01707]">0726 212 737</span></p>
           </div>
         </div>
       </div>

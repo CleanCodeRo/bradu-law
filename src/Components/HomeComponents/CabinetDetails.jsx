@@ -8,7 +8,7 @@ export default function CabinetDetails() {
         <div className="w-full flex justify-center font-normal font-['Inter']">
             <div className="w-11/12 md:w-5/6 xl:w-3/5  my-20  text-gray_text font-georgia">
                 <div id="firtPart" className="">
-                    <p className="font-bold  text-center text-xl uppercase">Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
+                    <p className="font-bold  text-center text-xl uppercase">CABINET DE AVOCAT- CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p>
                     <p className="text-center text-sm mt-4">acordă asistență și reprezentare juridică în domenii de drept comercial, înființări societăți, drept civil, dreptul familiei, dreptul muncii, proprietate intelectuală, procedura insolvenței, recuperări creanțe,
                         drept administrativ, asociații și fundații etc.
                     </p>

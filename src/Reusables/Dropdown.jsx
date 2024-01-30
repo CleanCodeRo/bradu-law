@@ -6,8 +6,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-let options = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTA", "DUE DILIGENCE", "GDPR"]
-let icons = ["images/judge_1705255.png", "images/parental-control_3092920.png", "images/construction_8434403.png", "images/sound-bar_6612869.png", "images/shield_3177389.png"]
+let options = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
+let icons = ["images/judge_1705255.png", "images/parental-control_3092920.png", "images/construction_8434403.png", "images/sound-bar_6612869.png", "images/consult_7997942.png " ,"images/shield_3177389.png"]
+let links = ["#","#","#","/dueDiligence","/legalAdvice","#"]
 
 export default function Dropdown() {
 
@@ -42,13 +43,13 @@ export default function Dropdown() {
               {({ active }) => (
 
                 <a
-                  href="#"
+                  href={links[index]}
                   className={classNames(
                     active ? "bg-gray-100 text-red-900" : "text-gray-700",
                     " px-4 py-3 text-[11.4px] font-extrabold border-b flex items-center"
                   )}
                 >
-                  <img className="w-[22px] h-[22px]" src={icons[index]} />
+                  <img className="w-[22px] h-[22px]" src={icons[index]} draggable="false"/>
                   <p className="ml-3">{option}</p>
                 </a>
               )}

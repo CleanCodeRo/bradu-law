@@ -23,11 +23,11 @@ export function LeftDrawer({ specialClass }) {
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
 
+  let serviceOptions = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
+  let serviceOptionsLinks = ["#","#","#","/dueDiligence","/legalAdvice", "#"]
 
-
-  let serviceOptions = ["DREPT CIVIL", "DREPTUL FAMILIEI", "DREPT SOCIETAR", "GDPR", "INSOLVENTA / FALIMENT", "DREPT ADMINISTRATIV", "DREPTUL MUNCII", "PROPRIETATE INTELECTUALA", "ASOCIATII SI FUNDATII"]
-  let serviceOptionsLinks = ["#", "#", "#", "#", "#", "#", "#", "#", "#", "#"]
-
+  // let insolventaSiFalimentOptions = ["PROCEDERI IN CURS", "PROCEDERI INCHEIATE", "PROCEDERI ADMINISTRATOR SCHIMBAT"]
+  // let insolventaSiFalimentOptionsLinks = ["#", "#", "#"]
 
   return (
 
@@ -79,37 +79,54 @@ export function LeftDrawer({ specialClass }) {
           </a>
 
           <ListItem >
-            <ListItemPrefix>
-              <i className="fa-solid fa-bell-concierge"></i>
+            <Popover placement="bottom-start"  >
+              <PopoverHandler>
+                <div id="optionButton" className="w-full h-full flex justify-between">
+                  <div className="flex">
+                    <i className="fa-solid fa-bell-concierge mr-4"></i>
+                    <p> Servicii</p>
+                  </div>
 
-            </ListItemPrefix>
-            <Popover placement="right-end"  >
-          <PopoverHandler>
-            <div>Servicii</div>
-          </PopoverHandler>
-          
-          <PopoverContent className="!absolute !z-[9999]">
-            <div >This is a very beautiful popover, show some love.</div>
-          </PopoverContent>
-          
-          
-        </Popover>
+                  <i className="fa-solid fa-angle-down first-letter text-sm mx-[4px] "></i>
+                </div>
+              </PopoverHandler>
 
-            <ListItemSuffix>
-              <i className="fa-solid fa-angle-down first-letter text-sm mx-[4px] "></i>
-            </ListItemSuffix>
+              <PopoverContent className="!absolute !z-[9999] flex flex-col">
+                {serviceOptions.map((option, index) =>
+                  <div key={index} className="hover:text-[#c01707]  text-[13px] select-none p-[2px]">
+                    <a className="w-full h-full" href={serviceOptionsLinks[index]}>{option}</a>
+                  </div>)}
+              </PopoverContent>
+            </Popover>
           </ListItem>
 
-
+          <a href="/insolvencyBankruptcy">
           <ListItem>
             <ListItemPrefix>
-              <i className="fa-solid fa-circle-dollar-to-slot"></i>
+            <i className="fa-solid fa-circle-dollar-to-slot"></i>
             </ListItemPrefix>
-            Insolventa / Faliment
-            <ListItemSuffix>
-              <i className="fa-solid fa-angle-down first-letter text-sm mx-[4px] "></i>
-            </ListItemSuffix>
+            <p>INSOLVENTA/FALIMENT</p>
+            {/* <Popover placement="bottom-start"  >
+              <PopoverHandler>
+                <div id="optionButton" className="w-full h-full flex justify-between">
+                  <div className="flex">
+                  <i className="fa-solid fa-circle-dollar-to-slot mr-4"></i>
+                    <p>INSOLVENTA/FALIMENT</p>
+                  </div>
+
+                  <i className="fa-solid fa-angle-down first-letter text-sm mx-[4px] "></i>
+                </div>
+              </PopoverHandler>
+
+              <PopoverContent className="!absolute !z-[9999] flex flex-col">
+                {insolventaSiFalimentOptions.map((option, index) =>
+                  <div key={index} className="hover:text-[#c01707]  text-[13px] select-none p-[2px]">
+                    <a className="w-full h-full" href={insolventaSiFalimentOptionsLinks[index]}>{option}</a>
+                  </div>)}
+              </PopoverContent>
+            </Popover> */}
           </ListItem>
+          </a>
 
           <a href="/auctions">
             <ListItem>

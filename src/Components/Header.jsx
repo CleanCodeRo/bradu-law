@@ -51,7 +51,7 @@ export default function Header() {
         <div id="nameAndPhoneNumber" className="flex items-center sm:justify-between  flex-col xl:flex-row  w-full font-normal font-['Inter']  py-3 px1080:py-2.5 ">
           <div id="lawyerName" className="flex items-center h-full ml-0 sm:ml-10 font-bold ">
             <img draggable="false" className="h-5 w-5 mx-1" src="images/book-with-marker_43139.png" />
-            <p className="uppercase ">Cabinet Individual de Insolventa Bradu Nicoleta-Dorina</p>
+            <p className="uppercase ">CABINET DE AVOCAT - CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p>
           </div>
 
           <div id="lawyerContact" className="hidden px1080:flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0 font-bold ">
@@ -62,6 +62,7 @@ export default function Header() {
       </div>
 
       <hr></hr>
+
 
       {/* //THIS IS A SMALL HEADER */}
       <div id="SMALL HEADER" className=" w-full bg-first text-gray_text flex flex-col md:flex-row px1080:hidden items-center justify-between py-3">
@@ -81,6 +82,8 @@ export default function Header() {
           <p className="text-sm">CONTACT RAPID : <span className="text-red-300">0743 378 380</span></p>
         </div>
       </div>
+      {/* //THIS IS A SMALL HEADER */}
+      
 
       <div id="row1Header" className="w-full hidden px1080:flex  flex-col ">
         <div className="flex justify-center h-[88px]">
@@ -88,6 +91,7 @@ export default function Header() {
             id="logo"
             className="w-[260px] h-21 mt-0.5"
             src="images/Untitled.png"
+            draggable={false}
             onClick={() => navigate("/")}
           />
           <div id="buttonsContainer" className="flex text-neutral-500 text-sm text-gray_text font-normal font-['Inter'] uppercase leading-tight cursor-pointer ">
@@ -96,15 +100,16 @@ export default function Header() {
             <HeaderDropdown
               text="SERVICII"
               title="DOMENII DE PRACTICA"
-              dropdownTexts={["DREPT CIVIL", "DREPTUL FAMILIEI", "DREPT SOCIETAR", "GDPR", "INSOLVENTA / FALIMENT", "DREPT ADMINISTRATIV", "DREPTUL MUNCII", "PROPRIETATE INTELECTUALA", "ASOCIATII SI FUNDATII"]}
-              dropdownLinks={["#", "#", "#", "#", "#", "#", "#", "#", "#", "#"]}
+              dropdownTexts={["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]}
+              dropdownLinks={["#", "#", "#", "/dueDiligence", "/legalAdvice", "#"]}
             />
-            <HeaderDropdown
+            {/* <HeaderDropdown
               text="INSOLVENTA / FALIMENT"
               title="DOSARE INSOLVENTA"
               dropdownTexts={["PRODUCERI IN CURS", "PRODUCERI INCHEIATE", "PRODUCERI ADMINISTRATOR SCHIMBAT"]}
               dropdownLinks={["#", "#", "#"]}
-            />
+            /> */}
+             <HeaderButton text="INSOLVENTA / FALIMENT" navigate={"/insolvencyBankruptcy"}/>
             <HeaderButton text="LICITATII" navigate={"/auctions"}/>
             <HeaderButton text="ARTICOLE" navigate={"/articles"}/>
             <HeaderButton text="CONTACT" navigate="/contact"/>

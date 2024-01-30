@@ -32,7 +32,7 @@ export default function Insolventa() {
 
                     </div> */}
 
-                    <hr className="mt-10 mb-3"></hr>
+            
 
                     <div id="iconsDetails" className="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-16 mb-10">
                         <IconDetailCard image="images/judge_1705255.png" title={"Insolventa -Cabinet de avocat"} text={"Lansarea și gestionarea procedurilor de insolvență "} />

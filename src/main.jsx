@@ -16,6 +16,7 @@ import LegalAdvice from './Pages/LegalAdvice';
 import Insolventa from './Pages/Insolventa';
 import Comercial from './Pages/Comercial';
 import WappComponent from './Components/WappComponent';
+import Recuperari from './Pages/Recuperari';
 
 export default function App() {
   return (
@@ -33,6 +34,8 @@ export default function App() {
         <Route path="/legalAdvice" element={<LegalAdvice/>}> </Route>
         <Route path="/insolventa" element={<Insolventa/>}> </Route>
         <Route path="/drept-comercial-si-societar" element={<Comercial/>}> </Route>
+        <Route path="/recuperari-creante" element={<Recuperari/>}> </Route>
+
         
         
 

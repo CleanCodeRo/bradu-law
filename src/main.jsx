@@ -13,6 +13,8 @@ import Articles from './Pages/Articles';
 import DueDilligince from './Pages/DueDilligince';
 import Insolvency_Bankruptcy from './Pages/Insolvency_Bankruptcy';
 import LegalAdvice from './Pages/LegalAdvice';
+import Insolventa from './Pages/Insolventa';
+import Comercial from './Pages/Comercial';
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
         <Route path="/dueDiligence" element={<DueDilligince/>}> </Route>
         <Route path="/insolvencyBankruptcy" element={<Insolvency_Bankruptcy/>}> </Route>
         <Route path="/legalAdvice" element={<LegalAdvice/>}> </Route>
+        <Route path="/insolventa" element={<Insolventa/>}> </Route>
+        <Route path="/drept-comercial-si-societar" element={<Comercial/>}> </Route>
         
         
 

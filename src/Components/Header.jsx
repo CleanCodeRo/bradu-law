@@ -100,8 +100,8 @@ export default function Header() {
             <HeaderDropdown
               text="SERVICII"
               title="DOMENII DE PRACTICA"
-              dropdownTexts={["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTEI", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]}
-              dropdownLinks={["#", "#", "#", "/dueDiligence", "/legalAdvice", "#"]}
+              dropdownTexts={["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTA", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]}
+              dropdownLinks={["/drept-comercial-si-societar", "#", "/insolventa", "/dueDiligence", "/legalAdvice", "#"]}
             />
             {/* <HeaderDropdown
               text="INSOLVENTA / FALIMENT"

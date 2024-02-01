@@ -35,10 +35,6 @@ export default function App() {
         <Route path="/insolventa" element={<Insolventa/>}> </Route>
         <Route path="/drept-comercial-si-societar" element={<Comercial/>}> </Route>
         <Route path="/recuperari-creante" element={<Recuperari/>}> </Route>
-
-        
-        
-
       </Routes>
       <WappComponent/>
     <Footer/>

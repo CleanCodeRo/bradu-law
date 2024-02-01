@@ -77,10 +77,10 @@ export default function Header() {
           />
         </div>
 
-        <div id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0  font-bold font-['Inter']">
+        <a href="tel:+40726212737" id="lawyerContact" className="flex h-full items-center mt-2 mx-0 sm:mx-10 xl:mt-0  font-bold font-['Inter'] cursor-pointer">
           <i className="fa-solid fa-phone mx-1"></i>
           <p className="text-sm">CONTACT RAPID : <span className="text-red-300">0743 378 380</span></p>
-        </div>
+        </a>
       </div>
       {/* //THIS IS A SMALL HEADER */}
 

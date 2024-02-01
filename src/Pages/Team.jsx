@@ -34,22 +34,22 @@ export default function Team() {
                 />
 
                 <div className="my-8 flex items-center justify-between  relative">
-                    <p className="font-bold text-sm  absolute bg-white py-6 pr-4">ECHIPA CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p>
+                    {/* <p className="font-bold text-sm  absolute bg-white py-6 pr-4">ECHIPA CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p> */}
+                    <p className="font-bold text-sm  absolute bg-white py-6 pr-4">ECHIPA</p>
                     <div className="bg-gray-300 h-[1px] w-full"></div>
                 </div>
 
 
                 <MemberCard
-                    name="Gabriela Ursarescu"
-                    image="teamImages/member3.png"
-                    roles={["Managing partner", "Avocat si practician in insolventa"]}
-                    descriptions={["I am a dedicated and results-oriented attorney with a passion for the law and a commitment to achieving justice for my clients. With a strong background in [specific area of law, e.g.",
-                        "My legal practice is characterized by meticulous attention to detail, strategic thinking, and a client-centric approach. I understand that each legal matter is unique, and I work tirelessly to tailor my strategies to meet the individual needs and objectives of my clients.",
-                        "I am committed to staying abreast of the latest legal developments and continuously expanding my expertise to provide cutting-edge solutions. My dedication to professional development is evidenced by my active involvement in [bar associations, legal organizations, or continuing education programs]."
+                    name="Bradu Nicoleta-Dorina"
+                    image="https://gomagcdn.ro/domains2/pravalia-cu-surprize.ro/files/product/original/statueta-zeita-justitiei-rasina-30cm-copie-564565.png"
+                    // roles={["Managing partner", "Avocat si practician in insolventa"]}
+                    descriptions={["Titularul cabinetului este dna. Avocat Bradu Nicoleta-Dorina, membra a Baroului Bucuresti cat si a Uniunii Nationale a Practicienilor in Insolventa-Filiala Bucuresti, avocat cu o experienta remarcabila in Dreptul Comercial.",
+                                   "Politica cabinetului este aceea de a asigura performanta, servicii de calitate, implicarea rapida si rezolvarea pertinenta a problemelor financiare, tehnice si juridice prin identificarea solutiilor optime pentru fiecare client in parte."
                     ]}
-                    email="gogguAlina@gmail.com" />
+                    email="avocatnicoleta.bradu@gmail.com" />
 
-                <MemberCard
+                {/* <MemberCard
                     name="Catalin Mihai Lupascu"
                     image="teamImages/member2.png"
                     roles={["Managing partner"]}
@@ -67,7 +67,7 @@ export default function Team() {
                         "I am committed to staying abreast of the latest legal developments and continuously expanding my expertise to provide cutting-edge solutions. My dedication to professional development is evidenced by my active involvement in [bar associations, legal organizations, or continuing education programs].",
                         "My legal practice is characterized by meticulous attention to detail, strategic thinking"
                     ]}
-                    email="razvan.maru@gmail.com" />
+                    email="razvan.maru@gmail.com" /> */}
 
             </div>
         </div>

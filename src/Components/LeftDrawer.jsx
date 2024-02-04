@@ -24,7 +24,7 @@ export function LeftDrawer({ specialClass }) {
   const closeDrawer = () => setOpen(false);
 
   let serviceOptions = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTA", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
-  let serviceOptionsLinks = ["/drept-comercial-si-societar","/recuperari-creante","/insolventa","/dueDiligence","/legalAdvice", "#"]
+  let serviceOptionsLinks = ["/drept-comercial-si-societar","/recuperari-creante","/insolventa","/dueDiligence","/legalAdvice", "/gdpr"]
 
   // let insolventaSiFalimentOptions = ["PROCEDERI IN CURS", "PROCEDERI INCHEIATE", "PROCEDERI ADMINISTRATOR SCHIMBAT"]
   // let insolventaSiFalimentOptionsLinks = ["#", "#", "#"]
@@ -37,7 +37,7 @@ export function LeftDrawer({ specialClass }) {
         <i className={`fa-solid fa-bars text-2xl ${specialClass}`}></i>
 
       </div>
-      <Drawer open={open} onClose={closeDrawer} overlay={true}>
+      <Drawer open={open} onClose={closeDrawer} overlay={false} className="bg-[rgba(255,255,255,0.8)] text-black backdrop-blur-md">
         <div className="mb-2 flex items-center justify-between p-4">
           <Typography variant="h5" color="blue-gray">
             MENU
@@ -59,7 +59,7 @@ export function LeftDrawer({ specialClass }) {
             </svg>
           </IconButton>
         </div>
-        <List className="font-['inter'] uppercase">
+        <List className="font-['inter'] uppercase text-black">
           <a href="/aboutUs">
             <ListItem>
               <ListItemPrefix>

@@ -6,7 +6,7 @@ export default function Insolvency_Bankruptcy() {
     <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700 font-['intel']">
     <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 ">
         <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            src="headerImages/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg"
             className=" sm:h-[25rem] w-full object-cover rounded-b-lg"
             draggable="false"
         />
@@ -14,7 +14,7 @@ export default function Insolvency_Bankruptcy() {
         <div id="otherDetails" className="w-full">
             <div id="title" className="w-full flex justify-center items-center my-12 relative">
                 <div className="bg-gray-300 h-[2px] w-full"></div>
-                <p className="text-center bg-white px-2 font-bold  sm:text-lg uppercase absolute">CABINET DE AVOCAT - INSOLVENTA / FALIMENT</p>
+                <p className="text-center bg-white px-2 font-bold  sm:text-lg uppercase absolute">CABINET DE AVOCAT - INSOLVENTA</p>
 
             </div>
 

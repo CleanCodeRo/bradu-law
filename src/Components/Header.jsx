@@ -109,7 +109,7 @@ export default function Header() {
               dropdownTexts={["PRODUCERI IN CURS", "PRODUCERI INCHEIATE", "PRODUCERI ADMINISTRATOR SCHIMBAT"]}
               dropdownLinks={["#", "#", "#"]}
             /> */}
-            <HeaderButton text="INSOLVENTA / FALIMENT" navigate={"/insolvencyBankruptcy"} />
+            <HeaderButton text="INSOLVENTA" navigate={"/insolvencyBankruptcy"} />
             <HeaderButton text="LICITATII" navigate={"/auctions"} />
             <HeaderButton text="ARTICOLE" navigate={"/articles"} />
             <HeaderButton text="CONTACT" navigate="/contact" />

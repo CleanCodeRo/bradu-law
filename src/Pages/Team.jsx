@@ -28,7 +28,7 @@ export default function Team() {
         <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700">
             <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 font-normal font-['Inter']">
                 <img
-                    src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+                    src="headerImages/tingey-injury-law-firm-9SKhDFnw4c4-unsplash.jpg"
                     className=" sm:h-[25rem] w-full object-cover rounded-b-lg"
                     draggable="false"
                 />

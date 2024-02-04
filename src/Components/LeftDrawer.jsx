@@ -105,7 +105,7 @@ export function LeftDrawer({ specialClass }) {
             <ListItemPrefix>
             <i className="fa-solid fa-circle-dollar-to-slot"></i>
             </ListItemPrefix>
-            <p>INSOLVENTA/FALIMENT</p>
+            <p>INSOLVENTA</p>
             {/* <Popover placement="bottom-start"  >
               <PopoverHandler>
                 <div id="optionButton" className="w-full h-full flex justify-between">

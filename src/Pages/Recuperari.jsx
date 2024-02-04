@@ -9,7 +9,7 @@ export default function Recuperari() {
         <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700 font-['intel']">
             <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 ">
                 <img
-                    src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    src="headerImages/wallpaperflare.com_wallpaper (1).jpg"
                     className=" sm:h-[25rem] w-full object-cover rounded-b-lg"
                     draggable="false"
                 />

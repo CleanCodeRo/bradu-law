@@ -74,7 +74,7 @@ export default function Header() {
           <img
             id="logo"
             className="w-[260px] h-20 rounded-lg"
-            src="images/Untitled.png"
+            src="images\NewLogo.png"
             onClick={() => navigate("/")}
             draggable="false"
           />
@@ -93,7 +93,7 @@ export default function Header() {
           <img
             id="logo"
             className="w-[260px] h-21 mt-0.5"
-            src="images/Untitled.png"
+            src="images\NewLogo.png"
             draggable={false}
             onClick={() => navigate("/")}
           />

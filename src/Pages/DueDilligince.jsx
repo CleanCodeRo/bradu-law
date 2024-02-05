@@ -6,7 +6,7 @@ export default function DueDilligince() {
     <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700 font-['intel']">
             <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 ">
                 <img
-                    src="headerImages/sigmund-Rj5OIPWEmCE-unsplash.jpg"
+                    src="headerImages\Due-Diligence.jpg"
                     className=" sm:h-[25rem] w-full object-cover rounded-b-lg"
                     draggable="false"
                 />

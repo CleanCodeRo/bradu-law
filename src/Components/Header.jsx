@@ -7,6 +7,7 @@ import {
   PopoverContent,
 } from "@material-tailwind/react";
 import React from "react";
+import Search from "./HomeComponents/Search";
 
 
 export default function Header() {
@@ -122,14 +123,7 @@ export default function Header() {
         <div id="row2Header" className="w-full flex justify-center items-center">
           <div id="row2Wrapper" className="w-[1140px] bg-first flex items-center">
             <Dropdown />
-            <input
-              id="searchBar"
-              className="w-[845px] h-[35px] border p-3 outline-0 text-gray_text placeholder-gray_text text-[12px] font-['inter'] font-bold uppercase"
-              placeholder="ENTER KEYWORDS HERE ..."
-            />
-            <button className=" text-center w-6 h-6 ml-1 hover:bg-gray-300 rounded-sm">
-              <i className="fa-solid fa-magnifying-glass  text-xs"></i>
-            </button>
+            <Search/>
           </div>
         </div>
       </div>

@@ -31,11 +31,13 @@ export default function Header() {
         </PopoverHandler>
         <PopoverContent className="rounded-sm font-['Inter'] font-bold">
           <p className="text-gray_text text-sm py-1.5 text-center">{title}</p>
+          <div className="flex flex-col">
           {dropdownTexts?.map((item, index) =>
-            <div key={index} className="hover:text-[#c01707]  text-[11px] select-none p-[2px]">
-              <a className="w-full h-full" href={dropdownLinks[index]}>{item}</a>
-            </div>
+            <a key={index} href={dropdownLinks[index]} className="hover:text-[#c01707] w-full h-full text-[11px] select-none p-[2px]">
+              {item}
+            </a>
           )}
+          </div>
         </PopoverContent>
       </Popover>
     )

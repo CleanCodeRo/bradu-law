@@ -32,8 +32,8 @@ export default function Articles() {
     return (
         <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700 font-['intel']">
             <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 ">
-                <img src="/images/wallpaperimage.png" />
-                <img className="h-4/6" src={"/images/wallpaperimage.png"} draggable="false"/>
+              
+                <img className="h-[70vh] mt-2" src="/images/wallpaperimg.png" draggable="false"/>
                 {/* <p className="text-gray_text text-xl mt-12 mb-4">CATEGORII : ARTICOLE</p>
 
                 <div id="itemList" className="flex flex-col">

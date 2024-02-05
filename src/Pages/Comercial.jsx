@@ -32,11 +32,11 @@ export default function Comercial() {
 
                     <div id="iconsDetails" className="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-16 mb-10">
                         <IconDetailCard image="images/judge_1705255.png" title={"Consultații juridice acordate societăților "} />
-                        <IconDetailCard image="images/chart_3832835.png" title={"Recuperări creanțe "} />
+                        <IconDetailCard image="images/money-flow.png" title={"Recuperări creanțe "} />
                         <IconDetailCard image="images/scaleontopofbook.png" title={"Redactari acte și contracte societăți"}/>
-                        <IconDetailCard image="images/chart_3832835.png" title={"Obținerea de avize și autorizații de la diverse instituții "} />
+                        <IconDetailCard image="images/registre.png" title={"Obținerea de avize și autorizații de la diverse instituții "} />
                         <IconDetailCard image="images/chart_3832835.png" title={"Servicii de solutionare a diferendelor financiare atat in plan intern cat si international"}  />
-                        <IconDetailCard image="images/chart_3832835.png" title={"Servicii de modificare, completare acte la Registrul Comertului, înfiintare firme, puncte de lucru, lichidare voluntara a firmelor"} />
+                        <IconDetailCard image="images/authorization.png" title={"Servicii de modificare, completare acte la Registrul Comertului, înfiintare firme, puncte de lucru, lichidare voluntara a firmelor"} />
 
                     </div>
                 </div>

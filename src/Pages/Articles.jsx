@@ -32,11 +32,13 @@ export default function Articles() {
     return (
         <div id="principalHolder" className="w-full flex items-center justify-center text-gray-700 font-['intel']">
             <div id="centerdHolder" className="w-11/12 md:w-5/6 xl:w-3/5 ">
-                <p className="text-gray_text text-xl mt-12 mb-4">CATEGORII : ARTICOLE</p>
+                <img src="/images/wallpaperimage.png" />
+                <img className="h-4/6" src={"/images/wallpaperimage.png"} draggable="false"/>
+                {/* <p className="text-gray_text text-xl mt-12 mb-4">CATEGORII : ARTICOLE</p>
 
                 <div id="itemList" className="flex flex-col">
                     {  data.map((item, index) =>  <EventComponent key={index} title={item.title} date={item.date} description={item.description} />)}
-                </div>
+                </div> */}
             </div>
 
         </div>

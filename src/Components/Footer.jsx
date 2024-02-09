@@ -59,7 +59,7 @@ export default function Footer() {
 
         </div>
         <p className=" leading-tight text-xs text-center ">
-          Copyright 2024 bradu.ro - CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA
+          Copyright 2024 bradu.ro - Powered by CleanCode Solutions - CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA
         </p>
       </div>
     </div>

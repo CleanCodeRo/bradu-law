@@ -18,6 +18,7 @@ import Comercial from './Pages/Comercial';
 import WappComponent from './Components/WappComponent';
 import Recuperari from './Pages/Recuperari';
 import GDPR from './Pages/GDPR';
+import LoginPanel from './Pages/LoginPanel';
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/drept-comercial-si-societar" element={<Comercial/>}> </Route>
         <Route path="/recuperari-creante" element={<Recuperari/>}> </Route>
         <Route path="/gdpr" element={<GDPR/>}> </Route>
+        <Route path="/login" element={<LoginPanel/>}> </Route>
       </Routes>
       <WappComponent/>
     <Footer/>

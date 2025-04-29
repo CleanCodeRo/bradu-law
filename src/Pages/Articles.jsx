@@ -42,7 +42,7 @@ export default function Articles() {
                 throw new Error("Failed to fetch articles");
             }
             const data = await response.json();
-            setArticles(data.reverse());
+            setArticles(data);
 
         } catch (err) {
             setError("Error loading articles");

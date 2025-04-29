@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 
 export default function Search() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const navigate = useNavigate();
 
   const searchMappings = [
@@ -11,9 +12,7 @@ export default function Search() {
     { term: 'juridica', route: '/legalAdvice' },
     { term: 'juridic', route: '/legalAdvice' },
     { term: 'faliment', route: '/insolventa' },
-  
   ];
-  //Adauga keywords 
 
   const handleSearch = () => {
     const lowercaseQuery = searchQuery.toLowerCase();
@@ -22,7 +21,6 @@ export default function Search() {
     if (matchingMapping) {
       navigate(matchingMapping.route);
     } else {
-      
       console.log('No match found.');
     }
   };
@@ -33,14 +31,32 @@ export default function Search() {
     }
   };
 
+  const handleInputChange = (e) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+
+    if (query) {
+      const suggestions = searchMappings.filter((mapping) =>
+        mapping.term.toLowerCase().includes(query.toLowerCase())
+      );
+      setFilteredSuggestions(suggestions);
+    } else {
+      setFilteredSuggestions([]);
+    }
+  };
+
+  const handleSuggestionClick = (route) => {
+    navigate(route);
+  };
+
   return (
-    <>
+    <div className="relative">
       <input
         id="searchBar"
         className="w-[845px] h-[35px] border p-3 outline-0 text-gray_text placeholder-gray_text text-[12px] font-['inter'] font-bold uppercase"
         placeholder="ENTER KEYWORDS HERE ..."
         value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+        onChange={handleInputChange}
         onKeyPress={handleKeyPress}
       />
       <button
@@ -49,6 +65,19 @@ export default function Search() {
       >
         <i className="fa-solid fa-magnifying-glass text-xs"></i>
       </button>
-    </>
+      {filteredSuggestions.length > 0 && (
+        <ul className="absolute bg-white border mt-1 w-[845px] max-h-40 overflow-y-auto z-10">
+          {filteredSuggestions.map((suggestion, index) => (
+            <li
+              key={index}
+              className="p-2 hover:bg-gray-200 cursor-pointer"
+              onClick={() => handleSuggestionClick(suggestion.route)}
+            >
+              {suggestion.term} - {suggestion.route}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 }

@@ -24,7 +24,7 @@ const LoginPanel: React.FC = () => {
             .then(data => {
                 if (data.token) {
                     localStorage.setItem("lawToken", data.token);
-                    navigate("/admin");
+                    navigate("/articles");
                 } else {
                     setError(data.message || 'Login failed');
                 }

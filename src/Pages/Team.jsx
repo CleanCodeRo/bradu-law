@@ -6,7 +6,7 @@ export default function Team() {
 
         return (
             <div className="flex flex-col lg:flex-row w-full text-sm mb-8">
-                <img draggable="false" className="w-auto h-auto px400:h-[450px] px400:w-[300px] mb-3 lg:mr-16" src={image} />
+                <img draggable="false" className="w-auto h-auto px400:w-[350px] px400:h-[450px] mb-3 lg:mr-16" src={image} />
 
                 <div className="flex flex-col px-3 w-full">
                     <p className="font-bold">{name}</p>
@@ -33,7 +33,7 @@ export default function Team() {
                     draggable="false"
                 />
 
-                <div className="my-8 flex items-center justify-between  relative">
+                <div className="my-9 flex items-center justify-between  relative">
                     {/* <p className="font-bold text-sm  absolute bg-white py-6 pr-4">ECHIPA CABINET INDIVIDUAL DE INSOLVENTA BRADU NICOLETA-DORINA</p> */}
                     <p className="font-bold text-sm  absolute bg-white py-6 pr-4">ECHIPA</p>
                     <div className="bg-gray-300 h-[1px] w-full"></div>
@@ -41,8 +41,8 @@ export default function Team() {
 
 
                 <MemberCard
-                    name="Bradu Nicoleta-Dorina"
-                    image="https://gomagcdn.ro/domains2/pravalia-cu-surprize.ro/files/product/original/statueta-zeita-justitiei-rasina-30cm-copie-564565.png"
+                    name="Bradu Nicoleta-Dorina1"
+                    image="public\images\AvocatEchipa.jpeg"
                     // roles={["Managing partner", "Avocat si practician in insolventa"]}
                     descriptions={["Titularul cabinetului este dna. Avocat Bradu Nicoleta-Dorina, membra a Baroului Bucuresti cat si a Uniunii Nationale a Practicienilor in Insolventa-Filiala Bucuresti, avocat cu o experienta remarcabila in Dreptul Comercial.",
                                    "Politica cabinetului este aceea de a asigura performanta, servicii de calitate, implicarea rapida si rezolvarea pertinenta a problemelor financiare, tehnice si juridice prin identificarea solutiilor optime pentru fiecare client in parte."

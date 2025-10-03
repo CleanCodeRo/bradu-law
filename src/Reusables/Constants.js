@@ -1,0 +1,1 @@
+export const address = "Bucuresti, Sector 6, Bld. Iuliu Maniu 19A, Corp A, Ap. 0002"

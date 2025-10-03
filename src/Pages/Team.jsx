@@ -41,8 +41,8 @@ export default function Team() {
 
 
                 <MemberCard
-                    name="Bradu Nicoleta-Dorina1"
-                    image="public\images\AvocatEchipa.jpeg"
+                    name="Bradu Nicoleta-Dorina"
+                    image="images/AvocatEchipa.jpeg"
                     // roles={["Managing partner", "Avocat si practician in insolventa"]}
                     descriptions={["Titularul cabinetului este dna. Avocat Bradu Nicoleta-Dorina, membra a Baroului Bucuresti cat si a Uniunii Nationale a Practicienilor in Insolventa-Filiala Bucuresti, avocat cu o experienta remarcabila in Dreptul Comercial.",
                                    "Politica cabinetului este aceea de a asigura performanta, servicii de calitate, implicarea rapida si rezolvarea pertinenta a problemelor financiare, tehnice si juridice prin identificarea solutiilor optime pentru fiecare client in parte."

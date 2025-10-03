@@ -1,11 +1,12 @@
 
-import React, { useEffect } from 'react'; 
+import React, { useEffect } from 'react';
 import MyMap from '../Components/MyMap/MyMap';
+import { address } from '../Reusables/Constants';
 
 
 
-export default function Contact(){
-    
+export default function Contact() {
+
 
 
     return (
@@ -24,34 +25,35 @@ export default function Contact(){
                     </div>
 
                     <div id="iconsDetails" className="w-full   grid grid-cols-1 px768:grid-cols-2 gap-x-3 gap-y-3 mb-2.5">
-                        
+
                         <div id="leftPart" className="w-full xl-h-[480px] px768:h-fit flex flex-col text-[13px] ">
-                        
-        <p className="font-bold relative top-0 w-fit text-center mt-0 mb-2.5 uppercase text-[14px]">Contact</p>
-        <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">AVOCAT BRADU NICOLETA-DORINA</p>
-        <div className="flex mt-1.5 mb-2.5">
-        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Tel:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">+40 726 212 737</p>
-        </div>
-        
-        <div className="flex mt-1.5 mb-2.5 ">
-        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Email:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">avocatnicoleta.bradu@gmail.com</p>
-        
-        </div>
-        <div className="flex mt-1.5 mb-2.5 ">
-        <p className="font-bold relative top-0 w-fit text-center mt-0 ">Email:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800]">cinsolv.bradu@gmail.com</p>
-        
-        </div>
-        
-        <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Program:</p>
-        <p className=" relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Luni-Vineri: 09:00 - 17:00</p>
-        <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">Adresa:</p>
-        <p className=" relative top-0 w-fit text-center mt-1.5 mb-2.5 "></p>
-                            
-                        
-        
+
+                            <p className="font-bold relative top-0 w-fit text-center mt-0 mb-2.5 uppercase text-[14px]">Contact</p>
+                            <p className="font-bold relative top-0 w-fit text-center mt-1.5 mb-2.5 ">AVOCAT BRADU NICOLETA-DORINA</p>
+                            <div className="flex mt-1.5 mb-2.5">
+                                <p className="font-bold relative top-0 w-fit text-center mt-0 ">Tel:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800] ml-1">+40 726 212 737</p>
+                            </div>
+
+                            <div className="flex mt-1.5 mb-2.5 ">
+                                <p className="font-bold relative top-0 w-fit text-center mt-0 ">Email:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800] ml-1">avocatnicoleta.bradu@gmail.com</p>
+
+                            </div>
+                            <div className="flex mt-1.5 mb-2.5 ">
+                                <p className="font-bold relative top-0 w-fit text-center mt-0 ">Email:</p><p className="text-[#c01707] cursor-pointer hover:text-[#FF1800] ml-1">cinsolv.bradu@gmail.com</p>
+                            </div>
+
+                            <div className="flex mt-1.5 mb-2.5 ">
+                                <p className="font-bold relative top-0 w-fit text-center ">Program:</p>
+                                <p className=" relative top-0 w-fit text-center ml-1  "> Luni-Vineri: 09:00 - 17:00</p>
+                            </div>
+
+                            <div className="flex mt-1.5 mb-2.5 ">
+                                <p className="font-bold relative top-0 w-fit text-center ">Adresa: </p>
+                                <p className=" relative top-0 w-fit text-center  ">{address}</p>
+                            </div>
                         </div>
                         <div className="  w-full h-[450px]">
-                           <MyMap/>
+                            <MyMap />
                         </div>
                     </div>
                 </div>

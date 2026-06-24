@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function GDPR() {
     const Introduction = () => {
         return (
@@ -40,7 +38,7 @@ export default function GDPR() {
                     95/46/CE (Regulamentul general privind protectia datelor), avand in
                     vedere:
                 </p>
-                <p className="font-bold underline my-2 text-base"> <span className="ml-4">  </span>1.Definitii</p>
+                <p className="font-bold underline my-2 text-base"><span className="ml-4">  </span>1.Definitii</p>
                 <p className="my-2">
                     “Date cu caracter personal” inseamna orice informatii privind o
                     persoana fizica identificata sau identificabila (“persoana vizata”), o
@@ -86,7 +84,7 @@ export default function GDPR() {
                     privind prelucrarea datelor.
                 </p>
                 <p className="font-bold underline my-2 text-base">
-                <span className="ml-4">  </span>   2.Principii de prelucrare
+                    <span className="ml-4">  </span> 2.Principii de prelucrare
                 </p>
                 <p className="my-2">
                     Cabinet de Avocat-Individual de Insolventa Bradu Nicoleta-Dorina, in
@@ -115,7 +113,7 @@ export default function GDPR() {
                     instructiunile (scrise) ale Operatorului de Date.
                 </p>
                 <p className="font-bold underline my-2 text-base">
-                <span className="ml-4">  </span> 3.Obligatiile Cabinet de Avocat-Individual de Insolventa Bradu
+                    <span className="ml-4">  </span> 3.Obligatiile Cabinet de Avocat-Individual de Insolventa Bradu
                     Nicoleta-Dorina
                 </p>
                 <p className="my-2">
@@ -143,7 +141,7 @@ export default function GDPR() {
                     subscrisei.
                 </p>
                 <p className="font-bold underline my-2 text-base">
-                <span className="ml-4">  </span>   Protectia si prelucrarea datelor cu caracter personal
+                    <span className="ml-4">  </span> Protectia si prelucrarea datelor cu caracter personal
                 </p>
                 <p className="my-2">
                     Cabinet de Avocat-Individual de Insolventa Bradu Nicoleta-Dorina, in
@@ -180,34 +178,50 @@ export default function GDPR() {
 
     const Point1 = () => {
         return <div className="my-6">
-        <p id="title" className="font-bold underline my-2 text-base">1. Categorii de date cu caracter personal</p>
-            <p className="my-2">Pentru scopurile Prelucrarii mentionate la punctul 2 de mai jos, prelucram datele dumneavoastra cu caracter personal dupa cum urmeaza: </p>
+            <p id="title" className="font-bold underline my-2 text-base">1. Categorii de date cu caracter personal</p>
+            <p className="my-2">Pentru scopurile Prelucrarii mentionate la punctul 2 de mai jos, prelucram datele
+                dumneavoastra cu caracter personal dupa cum urmeaza: </p>
             <p className="my-2 ml-9 ">*nume, prenume,</p>
             <p className="my-2 ml-9 ">*adresa de email,</p>
             <p className="my-2 ml-9 ">*numarul de telefon mobil/fix,</p>
             <p className="my-2 ml-9 ">*adresa de livrare/prestare a serviciilor,</p>
             <p className="my-2 ml-9 ">*adresa de corespondenta</p>
-            <p className="my-2 ml-9 ">*alte informatii cu caracter personal pe care ni le oferiti in mod explicit, necesare pentru 
-derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare „Date personale”);
-</p>
-            
-            </div>;
+            <p className="my-2 ml-9 ">*alte informatii cu caracter personal pe care ni le oferiti in mod explicit,
+                necesare pentru
+                derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare „Date personale”);
+            </p>
+
+        </div>;
     };
 
     const Point2 = () => {
         return <div className="my-6">
-        <p id="title" className="font-bold underline my-2 text-base">2.Scopurile Prelucrarii</p>
-        <p className="my-2">•	Prelucram datele dumneavoastra cu caracter personal in masura permisa sau impusa de legislatia aplicabila in urmatoarele scopuri:</p>
-        <p className="my-2 ml-9"> ➢	Comunicarea cu dumneavoastră pentru a vă informa în legătură cu evoluția serviciului solicitat, analizarea și îmbunătățirea serviciilor și comunicărilor noastre către dumneavoastră, oferirea de consultanță juridică, inclusiv fiscală și în materie de insolvență sau alte servicii şi alte demersuri pe care le-ați fi putut solicita, inclusiv reprezentare juridică în instanțele de judecată, tribunale arbitrale sau alte autorități competente;</p>
-        <p className="my-2 ml-9"> ➢	Gestionarea şi administrarea relației de afaceri dintre dumneavoastră şi cabinet, inclusiv servicii de procesare a plăților, contabilitate, auditare, facturare și încasare, asistență;</p>
-        <p className="my-2 ml-9"> ➢	Respectarea obligațiilor noastre legale;</p>
-        <p className="my-2 ml-9"> ➢	In scopul respectării hotărârilor judecătorești și exercitării și/sau apărării drepturilor noastre legale; și
-În orice scop aferent și/sau auxiliar oricărora dintre cele de mai sus.
-</p>
-        <p className="my-2">În anumite împrejurări, colectăm Date cu caracter personal cu privire la dumneavoastră de la o sursă terță. Spre exemplu, putem colecta Date cu caracter personal de la angajatorul dumneavoastră, alte societăți sau persoane fizice cu care aveți legături, agenții guvernamentale, birouri de credit, furnizori de informații sau servicii sau din arhive publice.</p>
-        <p className="my-2">•	Pentru furnizarea serviciilor oferite de catre Cabinet de Avocat-Individual de Insolventa Bradu Nicoleta-Dorina, cuprinzand actiunile specifice acestei activitati;</p>
-        <p className="my-2">PROTECŢIA DATELOR.</p>
-        <p className="my-2">La utilizarea serviciilor noastre este posibil să ţi se solicite date personale. Furnizarea acestora este voluntară. Datele tale personale sunt utilizate în strictă conformitate cu legislaţia romana privitoare la protecţia datelor. </p>
+            <p id="title" className="font-bold underline my-2 text-base">2.Scopurile Prelucrarii</p>
+            <p className="my-2">• Prelucram datele dumneavoastra cu caracter personal in masura permisa sau impusa de
+                legislatia aplicabila in urmatoarele scopuri:</p>
+            <p className="my-2 ml-9"> ➢ Comunicarea cu dumneavoastră pentru a vă informa în legătură cu evoluția
+                serviciului solicitat, analizarea și îmbunătățirea serviciilor și comunicărilor noastre către
+                dumneavoastră, oferirea de consultanță juridică, inclusiv fiscală și în materie de insolvență sau alte
+                servicii şi alte demersuri pe care le-ați fi putut solicita, inclusiv reprezentare juridică în
+                instanțele de judecată, tribunale arbitrale sau alte autorități competente;</p>
+            <p className="my-2 ml-9"> ➢ Gestionarea şi administrarea relației de afaceri dintre dumneavoastră şi
+                cabinet, inclusiv servicii de procesare a plăților, contabilitate, auditare, facturare și încasare,
+                asistență;</p>
+            <p className="my-2 ml-9"> ➢ Respectarea obligațiilor noastre legale;</p>
+            <p className="my-2 ml-9"> ➢ In scopul respectării hotărârilor judecătorești și exercitării și/sau apărării
+                drepturilor noastre legale; și
+                În orice scop aferent și/sau auxiliar oricărora dintre cele de mai sus.
+            </p>
+            <p className="my-2">În anumite împrejurări, colectăm Date cu caracter personal cu privire la dumneavoastră
+                de la o sursă terță. Spre exemplu, putem colecta Date cu caracter personal de la angajatorul
+                dumneavoastră, alte societăți sau persoane fizice cu care aveți legături, agenții guvernamentale,
+                birouri de credit, furnizori de informații sau servicii sau din arhive publice.</p>
+            <p className="my-2">• Pentru furnizarea serviciilor oferite de catre Cabinet de Avocat-Individual de
+                Insolventa Bradu Nicoleta-Dorina, cuprinzand actiunile specifice acestei activitati;</p>
+            <p className="my-2">PROTECŢIA DATELOR.</p>
+            <p className="my-2">La utilizarea serviciilor noastre este posibil să ţi se solicite date personale.
+                Furnizarea acestora este voluntară. Datele tale personale sunt utilizate în strictă conformitate cu
+                legislaţia romana privitoare la protecţia datelor. </p>
         </div>;
     };
 
@@ -237,7 +251,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
 
                 <div id="list">
                     <p className=" my-2 ">
-                        •        <strong>Consimțământul</strong> -{" "}
+                        • <strong>Consimțământul</strong> -{" "}
                         <span className="underline">
                             Preambul (32), (42), (43); Art. 6 alin (1) lit. (a){" "}
                         </span>{" "}
@@ -245,7 +259,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                         consimțământul pentru prelucrare;
                     </p>
                     <p className=" my-2 ">
-                        •        <strong>Încheierea sau executarea unui contract</strong> -{" "}
+                        • <strong>Încheierea sau executarea unui contract</strong> -{" "}
                         <span className="underline">
                             Preambul (44); Art. 6 alin. (1) lit. (b)
                         </span>{" "}
@@ -254,7 +268,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                         persoanei vizate înainte de încheierea unui contract;
                     </p>
                     <p className=" my-2 ">
-                        •        <strong>Îndeplinirea unei obligații legale </strong>-{" "}
+                        • <strong>Îndeplinirea unei obligații legale </strong>-{" "}
                         <span className="underline">
                             Preambul (45); Art.6(1) lit. (c);Art. 6 alin. (3)
                         </span>{" "}
@@ -262,13 +276,13 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                         legale care îi revine operatorului;
                     </p>
                     <p className=" my-2 ">
-                        •        <strong>Interesele vitale</strong> -{" "}
+                        • <strong>Interesele vitale</strong> -{" "}
                         <span className="underline">Preambul (46); Art.6(1) lit. (d) </span>{" "}
                         prelucrarea este necesara pentru a proteja interesele vitale ale
                         persoanei vitale ale persoane vizate sau ale altei persoane fizice,
                     </p>
                     <p className=" my-2 ">
-                        •        <strong>Interesul public </strong>-{" "}
+                        • <strong>Interesul public </strong>-{" "}
                         <span className="underline">
                             Preambul (47), (48); Art.6(1) lit. (f)
                         </span>{" "}
@@ -279,7 +293,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                         personal, în special atunci când persoana vizată este un copil
                     </p>
                     <p className=" my-2 ">
-                        •       {" "}
+                        • {" "}
                         <strong>
                             Prelucrarea de categorii speciale de date cu caracter personal
                         </strong>{" "}
@@ -287,22 +301,22 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                     </p>
                     <div className="ml-9">
                         <p className=" my-2 ">
-                            ➢        persoana vizată și-a dat consimțământul explicit;{" "}
+                            ➢ persoana vizată și-a dat consimțământul explicit;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară în scopul îndeplinirii
+                            ➢ prelucrarea este necesară în scopul îndeplinirii
                             obligațiilor și al exercitării unor drepturi specifice ale
                             operatorului sau ale persoanei vizate în domeniul ocupării forței
                             de muncă și al securității sociale și protecției sociale;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară pentru protejarea intereselor
+                            ➢ prelucrarea este necesară pentru protejarea intereselor
                             vitale ale persoanei vizate sau ale unei alte persoane fizice,
                             atunci când persoana vizată se află în incapacitate fizică sau
                             juridică de a-și da consimțământul;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este efectuată în cadrul activităților lor
+                            ➢ prelucrarea este efectuată în cadrul activităților lor
                             legitime și cu garanții adecvate de către o fundație, o asociație
                             sau orice alt organism fără scop lucrativ și cu specific politic,
                             filozofic, religios sau sindical, cu condiția ca prelucrarea să se
@@ -312,16 +326,16 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                             nu fie comunicate terților fără consimțământul persoanelor vizate;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea se referă la date cu caracter personal care
+                            ➢ prelucrarea se referă la date cu caracter personal care
                             sunt făcute publice în mod manifest de către persoana vizată;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară pentru constatarea, exercitarea
+                            ➢ prelucrarea este necesară pentru constatarea, exercitarea
                             sau apărarea unui drept în instanță sau ori de câte ori instanțele
                             acționează în exercițiul funcției lor judiciare;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară din motive de interes public
+                            ➢ prelucrarea este necesară din motive de interes public
                             major, în baza dreptului Uniunii sau a dreptului intern, care este
                             proporțional cu obiectivul urmărit, respectă esența dreptului la
                             protecția datelor și prevede măsuri corespunzătoare și specifice
@@ -329,7 +343,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                             persoanei vizate;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară în scopuri legate de medicina
+                            ➢ prelucrarea este necesară în scopuri legate de medicina
                             preventivă sau a muncii, de evaluarea capacității de muncă a
                             angajatului, de stabilirea unui diagnostic medical, de furnizarea
                             de asistență medicală sau socială sau a unui tratament medical sau
@@ -340,7 +354,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                             alineatul (3);{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară din motive de interes public în
+                            ➢ prelucrarea este necesară din motive de interes public în
                             domeniul sănătății publice, cum ar fi protecția împotriva
                             amenințărilor transfrontaliere grave la adresa sănătății sau
                             asigurarea de standarde ridicate de calitate și siguranță a
@@ -351,7 +365,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                             secretului profesional;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        prelucrarea este necesară în scopuri de arhivare în
+                            ➢ prelucrarea este necesară în scopuri de arhivare în
                             interes public, în scopuri de cercetare științifică sau istorică
                             ori în scopuri statistice, în conformitate cu articolul 89
                             alineatul (1), în baza dreptului Uniunii sau a dreptului intern,
@@ -363,7 +377,7 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                     </div>
 
                     <p className=" my-2 ">
-                        •        <strong>Prelucrarea în alt scop </strong> -{" "}
+                        • <strong>Prelucrarea în alt scop </strong> -{" "}
                         <span className="underline">Art. 6 alin. (4) </span> În cazul în
                         care prelucrarea în alt scop decât cel pentru care datele cu
                         caracter personal au fost colectate nu se bazează pe consimțământul
@@ -377,28 +391,28 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                     </p>
                     <div className="ml-9">
                         <p className=" my-2 ">
-                            ➢        orice legătură dintre scopurile în care datele cu
+                            ➢ orice legătură dintre scopurile în care datele cu
                             caracter personal au fost colectate și scopurile prelucrării
                             ulterioare preconizate;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        contextul în care datele cu caracter personal au fost
+                            ➢ contextul în care datele cu caracter personal au fost
                             colectate, în special în ceea ce privește relația dintre
                             persoanele vizate și operator;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        natura datelor cu caracter personal, în special în cazul
+                            ➢ natura datelor cu caracter personal, în special în cazul
                             prelucrării unor categorii speciale de date cu caracter personal,
                             în conformitate cu articolul 9, sau în cazul în care sunt
                             prelucrate date cu caracter personal referitoare la condamnări
                             penale și infracțiuni, în conformitate cu articolul 10;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        posibilele consecințe asupra persoanelor vizate ale
+                            ➢ posibilele consecințe asupra persoanelor vizate ale
                             prelucrării ulterioare preconizate;{" "}
                         </p>
                         <p className=" my-2 ">
-                            ➢        (e)existența unor garanții adecvate, care pot include
+                            ➢ (e)existența unor garanții adecvate, care pot include
                             criptarea sau pseudonimizarea.{" "}
                         </p>
                     </div>
@@ -563,14 +577,14 @@ derularea activitatilor in relatiile comerciale cu dvs (denumite în continuare 
                     </div>
 
                     <div id="description" className="text-sm ">
-                        <Introduction />
-                        <Point1 />
-                        <Point2 />
-                        <Point3 />
-                        <Point4 />
-                        <Point5 />
-                        <Point6 />
-                        <Point7 />
+                        <Introduction/>
+                        <Point1/>
+                        <Point2/>
+                        <Point3/>
+                        <Point4/>
+                        <Point5/>
+                        <Point6/>
+                        <Point7/>
                     </div>
                 </div>
             </div>

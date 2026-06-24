@@ -1,36 +1,40 @@
 {
-  "name": "v",
+  "name": "bradu-law.ro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@heroicons/react": "^2.0.18",
-    "@material-tailwind/react": "^2.1.5",
-    "firebase": "^10.7.1",
+    "@headlessui/react": "^1.7.19",
+    "@heroicons/react": "^2.2.0",
+    "@material-tailwind/react": "^2.1.10",
+    "@react-router/dev": "^7.18.0",
+    "@react-router/node": "^7.18.0",
+    "firebase": "^10.14.1",
+    "isbot": "^5",
     "maplibre-gl": "^3.6.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.1"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^7.18.0",
+    "react-router-dom": "^7.18.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@vitejs/plugin-react": "^4.2.0",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "postcss": "^8.4.32",
-    "sass": "^1.69.5",
-    "tailwindcss": "^3.3.6",
-    "vite": "^5.0.0"
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-router-dom": "^5.3.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "postcss": "^8.5.15",
+    "sass": "^1.101.0",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6.0.3",
+    "vite": "^7.3.5"
   }
 }

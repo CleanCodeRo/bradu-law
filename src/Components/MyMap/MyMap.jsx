@@ -1,47 +1,40 @@
-import React, { useEffect } from 'react'; 
+import {useEffect, useRef} from 'react';
 import './my-map.css';
-import maplibre from 'maplibre-gl';
 
-function MyMap() {
-  let mapContainer;
+export default function MyMap() {
+    const mapContainerRef = useRef(null);
+    const mapRef = useRef(null);
 
-  useEffect(() => {
-    const myAPIKey = '50e84aa977a340c48baa7bbf6fefa3eb'; 
-    const mapStyle = 'https://maps.geoapify.com/v1/styles/osm-carto/style.json';
-    let marker;
+    useEffect(() => {
+        let cancelled = false;
+        import('maplibre-gl').then((maplibre) => {
+            if (cancelled || !mapContainerRef.current) return;
+            const myAPIKey = '50e84aa977a340c48baa7bbf6fefa3eb';
+            const mapStyle = 'https://maps.geoapify.com/v1/styles/osm-carto/style.json';
 
-    const initialState = {
-      lng: 26.175283,
-      lat: 44.425322,
-      zoom: 9
-    };
+            const initialState = {
+                lng: 26.175283,
+                lat: 44.425322,
+                zoom: 9
+            };
 
-    const map = new maplibre.Map({
-      container: mapContainer,
-      style: `${mapStyle}?apiKey=${myAPIKey}`,
-      center: [initialState.lng, initialState.lat],
-      zoom: initialState.zoom,
-      interactive: false,
-        
-      });
-      
-  }, [mapContainer]);
-  
-//   const markerIcon = L.icon({
-//     iconUrl: `https://api.geoapify.com/v1/icon/?type=material&color=%23b44444&icon=cloud&textSize=small&noWhiteCircle&apiKey=${myAPIKey}`,
-//     iconSize: [31, 46], // size of the icon
-//     iconAnchor: [15.5, 42], // point of the icon which will correspond to marker's location
-//     popupAnchor: [0, -45] // point from which the popup should open relative to the iconAnchor
-//   });
-//   const zooMarker = L.marker([48.096980, 11.555466], {
-//     icon: markerIcon
-//   }).addTo(map);
-  
+            mapRef.current = new maplibre.default.Map({
+                container: mapContainerRef.current,
+                style: `${mapStyle}?apiKey=${myAPIKey}`,
+                center: [initialState.lng, initialState.lat],
+                zoom: initialState.zoom,
+                interactive: false,
+            });
+        });
 
-  return (
-    <div className="map-container w-full h-full " ref={el => mapContainer = el}>
-    </div>
-  )
-}
+        return () => {
+            cancelled = true;
+            if (mapRef.current) {
+                mapRef.current.remove();
+                mapRef.current = null;
+            }
+        };
+    }, []);
 
-export default MyMap;
+    return <div className="map-container w-full h-full " ref={mapContainerRef}/>
+};

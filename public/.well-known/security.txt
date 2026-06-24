@@ -1,0 +1,5 @@
+Contact: mailto:avocatnicoleta.bradu@gmail.com
+Contact: mailto:cinsolv.bradu@gmail.com
+Expires: 2027-02-11T00:00:00Z
+Preferred-Languages: en, ro
+Canonical: https://bradu-law.ro/.well-known/security.txt

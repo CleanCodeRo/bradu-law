@@ -1,5 +1,3 @@
-
-import React from "react";
 import IconDetailCard from "../../Reusables/IconDetailCard";
 
 export default function CabinetDetails() {

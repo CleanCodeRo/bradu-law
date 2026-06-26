@@ -1,4 +1,4 @@
-import {Links, Meta, Outlet, Scripts, ScrollRestoration, useLocation} from "react-router";
+import {Links, Meta, Outlet, Scripts, ScrollRestoration} from "react-router";
 import {useEffect} from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -15,18 +15,6 @@ function FontAwesomeKit() {
             script.remove();
         };
     }, []);
-    return null;
-}
-
-function GoogleAnalytics() {
-    const location = useLocation();
-    useEffect(() => {
-        if (typeof window.gtag === "function") {
-            window.gtag("config", "AW-18259205827", {
-                page_path: location.pathname + location.search,
-            });
-        }
-    }, [location]);
     return null;
 }
 
@@ -51,15 +39,6 @@ export function Layout({children}: { children: React.ReactNode }) {
             `
                 }}
             />
-            <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18259205827"></script>
-            <script dangerouslySetInnerHTML={{
-                __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-18259205827');
-        `
-            }}/>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -285,7 +264,6 @@ export function Layout({children}: { children: React.ReactNode }) {
                     height="0" width="0" style={{display: "none", visibility: "hidden"}}></iframe>
         </noscript>
         <FontAwesomeKit/>
-        <GoogleAnalytics/>
         <Header/>
         {children}
         <WappComponent/>

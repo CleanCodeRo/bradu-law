@@ -46,7 +46,7 @@ export function Layout({children}: { children: React.ReactNode }) {
                         "@context": "https://schema.org",
                         "@type": ["LegalService", "LocalBusiness"],
                         "@id": "https://www.bradu-law.ro",
-                        "name": "Cabinet de Avocat - Cabinet Individual de Insolventa Bradu Nicoleta-Dorina",
+                        "name": "Bradu Law - Cabinet de Avocat - Cabinet Individual de Insolventa Bradu Nicoleta-Dorina",
                         "alternateName": "Bradu Law",
                         "legalName": "Cabinet Individual de Insolventa Bradu Nicoleta-Dorina",
                         "description": "Cabinet de avocat care acordă asistență și reprezentare juridică în domenii de drept comercial, societar, civil, familiei, muncii, proprietate intelectuală, procedura insolvenței, recuperări creanțe, drept administrativ, asociații și fundații.",

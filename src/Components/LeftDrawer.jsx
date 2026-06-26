@@ -8,7 +8,7 @@ export function LeftDrawer({specialClass}) {
     const closeDrawer = () => setOpen(false);
 
     let serviceOptions = ["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTA", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]
-    let serviceOptionsLinks = ["/drept-comercial-si-societar", "/recuperari-creante", "/insolventa", "/dueDiligence", "/legalAdvice", "/gdpr"]
+    let serviceOptionsLinks = ["/drept-comercial-si-societar", "/recuperari-creante", "/insolventa", "/due-diligence", "/consultanta-juridica", "/gdpr"]
 
     return (
 
@@ -41,7 +41,7 @@ export function LeftDrawer({specialClass}) {
                     </IconButton>
                 </div>
                 <List className="font-['inter'] uppercase text-black">
-                    <a href="/aboutUs">
+                    <a href="/despre-noi">
                         <ListItem>
                             <ListItemPrefix>
                                 <i className="fa-solid fa-address-card" aria-hidden="true"></i>
@@ -50,7 +50,7 @@ export function LeftDrawer({specialClass}) {
                         </ListItem>
                     </a>
 
-                    <a href="/team">
+                    <a href="/echipa">
                         <ListItem>
                             <ListItemPrefix>
                                 <i className="fa-solid fa-people-group" aria-hidden="true"></i>
@@ -81,7 +81,7 @@ export function LeftDrawer({specialClass}) {
                         </Popover>
                     </ListItem>
 
-                    <a href="/insolvencyBankruptcy">
+                    <a href="/insolventa-si-faliment">
                         <ListItem>
                             <ListItemPrefix>
                                 <i className="fa-solid fa-circle-dollar-to-slot" aria-hidden="true"></i>
@@ -90,7 +90,7 @@ export function LeftDrawer({specialClass}) {
                         </ListItem>
                     </a>
 
-                    <a href="/auctions">
+                    <a href="/licitatii">
                         <ListItem>
                             <ListItemPrefix>
                                 <i className="fa-solid fa-gavel" aria-hidden="true"></i>
@@ -99,7 +99,7 @@ export function LeftDrawer({specialClass}) {
                         </ListItem>
                     </a>
 
-                    <a href="/articles">
+                    <a href="/articole">
                         <ListItem>
                             <ListItemPrefix>
                                 <i className="fa-solid fa-newspaper" aria-hidden="true"></i>

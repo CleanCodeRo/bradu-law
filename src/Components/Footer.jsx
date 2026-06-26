@@ -46,10 +46,10 @@ export default function Footer() {
                     <TextContainer text={"Recuperari Creante"} link={"/recuperari-creante"}/>
                     <SpecialSlash/>
 
-                    <TextContainer text={" Insolventa – Faliment"} link={"/insolvencyBankruptcy"}/>
+                    <TextContainer text={" Insolventa – Faliment"} link={"/insolventa-si-faliment"}/>
                     <SpecialSlash/>
 
-                    <TextContainer text={"Due Diligence"} link={"/dueDiligence"}/>
+                    <TextContainer text={"Due Diligence"} link={"/due-diligence"}/>
                     <SpecialSlash/>
 
                     <TextContainer text={"GDPR"} link={"/gdpr"}/>

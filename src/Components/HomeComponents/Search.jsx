@@ -8,8 +8,8 @@ export default function Search() {
     const searchMappings = [
         {term: 'insolventa', route: '/insolventa'},
         {term: 'creanta', route: '/recuperari-creante'},
-        {term: 'juridica', route: '/legalAdvice'},
-        {term: 'juridic', route: '/legalAdvice'},
+        {term: 'juridica', route: '/consultanta-juridica'},
+        {term: 'juridic', route: '/consultanta-juridica'},
         {term: 'faliment', route: '/insolventa'},
 
     ];

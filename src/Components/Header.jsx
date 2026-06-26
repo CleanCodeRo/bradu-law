@@ -102,17 +102,17 @@ export default function Header() {
                     />
                     <div id="buttonsContainer"
                          className="flex text-neutral-500 text-sm text-gray_text font-normal font-['Inter'] uppercase leading-tight cursor-pointer ">
-                        <HeaderButton text="DESPRE NOI" navigate="/aboutUs"/>
-                        <HeaderButton text="ECHIPA" navigate="/team"/>
+                        <HeaderButton text="DESPRE NOI" navigate="/despre-noi"/>
+                        <HeaderButton text="ECHIPA" navigate="/echipa"/>
                         <HeaderDropdown
                             text="SERVICII"
                             title="DOMENII DE PRACTICA"
                             dropdownTexts={["DREPT COMERCIAL SI SOCIETAR", "RECUPERARI CREANTE", "DREPT INSOLVENTA", "DUE DILIGENCE", "CONSULTANTA JURIDICA", "GDPR"]}
-                            dropdownLinks={["/drept-comercial-si-societar", "/recuperari-creante", "/insolventa", "/dueDiligence", "/legalAdvice", "/gdpr"]}
+                            dropdownLinks={["/drept-comercial-si-societar", "/recuperari-creante", "/insolventa", "/due-diligence", "/consultanta-juridica", "/gdpr"]}
                         />
-                        <HeaderButton text="INSOLVENTA" navigate={"/insolvencyBankruptcy"}/>
-                        <HeaderButton text="LICITATII" navigate={"/auctions"}/>
-                        <HeaderButton text="ARTICOLE" navigate={"/articles"}/>
+                        <HeaderButton text="INSOLVENTA" navigate={"/insolventa-si-faliment"}/>
+                        <HeaderButton text="LICITATII" navigate={"/licitatii"}/>
+                        <HeaderButton text="ARTICOLE" navigate={"/articole"}/>
                         <HeaderButton text="CONTACT" navigate="/contact"/>
                     </div>
                 </div>
